@@ -1,7 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 9/14/2015
- * Time: 5:30 PM
- */
+<?php wp_footer(); ?>
+</body>
+</html>

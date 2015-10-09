@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 9/14/2015
- * Time: 5:27 PM
- */
+<?php get_header(); ?>
+
+<?php get_template_part('template-parts/head'); ?>
+
+<?php get_footer(); ?>
