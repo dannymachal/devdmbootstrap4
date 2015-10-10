@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container dmbs-header">
     <div class="col-sm-4">
 
     </div>
