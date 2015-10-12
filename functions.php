@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Welcome to DevDmBootstrap4 a simple to use barebones theme for WordPress theme developers wishing to use the Twitter Bootstrap 4 frontend framework.
  *
@@ -87,6 +86,9 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         //enqueue the default style.css with the handle $textDomain(devdmbootstrap4)stylesheet
         wp_enqueue_style($textDomain . 'stylesheet', get_stylesheet_uri());
 
+        //enqueue Font Awesome Icon Set
+        wp_enqueue_style($textDomain . 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
         //eqnueue the default Bootstrap 4 JS with the handle $textDomain(devdmbootstrap4)js
         wp_enqueue_script($textDomain . 'js', get_template_directory_uri() . '/assets/bootstrap4/js/bootstrap.min.js', array('jquery'), $themeVersion, true);
 
@@ -94,5 +96,12 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
 }// end devdmbootstrap_scripts
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
 
+/*
+ * Include our Utility functions file.
+ */
+require get_template_directory() . "/includes/utilities.php";
 
-
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/includes/customizer.php';
