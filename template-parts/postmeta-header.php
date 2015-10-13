@@ -8,7 +8,7 @@
 
         <?php  if ( comments_open() ) : ?>
             <div class="col-sm-4 dmbs-post-comment-counter">
-                <a href="<?php esc_url( the_permalink() ); ?>#comments"><?php comments_number(__('0'), __('1'), '%' . __(' Comments',devdmbootstrapTextDomain()) );?> <span class="fa fa-comment"></span></a>
+                <a href="<?php esc_url( the_permalink() ); ?>#comments"><?php comments_number(__('0'), __('1'), '%' . __(' Comments','devdmbootstrap4') );?> <span class="fa fa-comment"></span></a>
             </div>
         <?php endif; ?>
 

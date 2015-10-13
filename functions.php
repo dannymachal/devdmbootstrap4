@@ -9,9 +9,7 @@
 /*
  * Global Variables
  */
-
 $themeVersion = "1.0";
-$textDomain = "devdmbootstrap4";
 
 /*
  * Setup the theme defaults
@@ -25,9 +23,7 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
     function devdmbootstrap_setup()
     {
 
-        global $textDomain;
-
-        load_theme_textdomain($textDomain, get_template_directory() . '/languages');
+        load_theme_textdomain('devdmbootstrap4', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -47,8 +43,8 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
-            'primary' => esc_html__('Header Menu', $textDomain),
-            'secondary' => esc_html__('Footer Menu', $textDomain),
+            'primary' => esc_html__('Header Menu', 'devdmbootstrap4'),
+            'secondary' => esc_html__('Footer Menu', 'devdmbootstrap4'),
         ));
 
         /*
@@ -76,12 +72,11 @@ if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
 
     function devdmbootstrap_widgets_init()
     {
-        global $textDomain;
 
         register_sidebar(array(
-            'name' => __('Right Sidebar', $textDomain),
+            'name' => __('Right Sidebar', 'devdmbootstrap4'),
             'id' => 'dmbs-right-sidebar',
-            'description' => __('Widgets in this area will be shown on all posts and pages.', $textDomain),
+            'description' => __('Widgets in this area will be shown on all posts and pages.', 'devdmbootstrap4'),
             'before_widget' => '<li id="%1$s" class="widget dmbs-widget dmbs-widget-right %2$s">',
             'after_widget' => '</li>',
             'before_title' => '<h2 class="widgettitle dmbs-widget-title dmbs-widget-right-title">',
@@ -89,9 +84,9 @@ if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
         ));
 
         register_sidebar(array(
-            'name' => __('Left Sidebar', $textDomain),
+            'name' => __('Left Sidebar', 'devdmbootstrap4'),
             'id' => 'dmbs-left-sidebar',
-            'description' => __('Widgets in this area will be shown on all posts and pages.', $textDomain),
+            'description' => __('Widgets in this area will be shown on all posts and pages.', 'devdmbootstrap4'),
             'before_widget' => '<li id="%1$s" class="widget dmbs-widget dmbs-widget-left %2$s">',
             'after_widget' => '</li>',
             'before_title' => '<h2 class="widgettitle dmbs-widget-title dmbs-widget-left-title">',
@@ -110,31 +105,26 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
 
     function devdmbootstrap_scripts()
     {
-        global $textDomain;
+
         global $themeVersion;
 
-        //enqueue the default Bootstrap 4 CSS with the handle $textDomain(devdmbootstrap4)css
-        wp_enqueue_style($textDomain . 'css', get_template_directory_uri() . '/assets/bootstrap4/css/bootstrap.min.css');
+        //enqueue the default Bootstrap 4 CSS with the handle devdmbootstrap4-css
+        wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/bootstrap4/css/bootstrap.min.css');
 
-        //enqueue the default style.css with the handle $textDomain(devdmbootstrap4)stylesheet
-        wp_enqueue_style($textDomain . 'stylesheet', get_stylesheet_uri());
+        //enqueue the default style.css with the handle devdmbootstrap4-stylesheet
+        wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
 
-        //enqueue Font Awesome Icon Set
-        wp_enqueue_style($textDomain . 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+        //enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome
+        wp_enqueue_style('devdmbootstrap4-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
-        //eqnueue the default Bootstrap 4 JS with the handle $textDomain(devdmbootstrap4)js
-        wp_enqueue_script($textDomain . 'js', get_template_directory_uri() . '/assets/bootstrap4/js/bootstrap.min.js', array('jquery'), $themeVersion, true);
+        //eqnueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js
+        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/bootstrap4/js/bootstrap.min.js', array('jquery'), $themeVersion, true);
 
     }
 }// end devdmbootstrap_scripts
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
 
-/*
- * Include our Utility functions file.
- */
-require get_template_directory() . "/includes/utilities.php";
-
 /**
- * Customizer additions.
+ * Customizer
  */
 require get_template_directory() . '/includes/customizer.php';

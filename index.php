@@ -40,7 +40,7 @@
 
                             <?php
                             the_content( sprintf(
-                                wp_kses( esc_html__( 'Continue reading %s', devdmbootstrapTextDomain() ), array( 'span' => array( 'class' => array() ) ) ),
+                                wp_kses( esc_html__( 'Continue reading %s', 'devdmbootstrap4' ), array( 'span' => array( 'class' => array() ) ) ),
                                 the_title( '<span class="screen-reader-text">"', '"</span>', false )
                             ) );
                             ?>
