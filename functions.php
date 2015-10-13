@@ -70,6 +70,39 @@ add_action( 'after_setup_theme', 'devdmbootstrap_setup' );
 
 
 /*
+ * Register left and right Sidebar
+ */
+if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
+
+    function devdmbootstrap_widgets_init()
+    {
+        global $textDomain;
+
+        register_sidebar(array(
+            'name' => __('Right Sidebar', $textDomain),
+            'id' => 'dmbs-right-sidebar',
+            'description' => __('Widgets in this area will be shown on all posts and pages.', $textDomain),
+            'before_widget' => '<li id="%1$s" class="widget dmbs-widget dmbs-widget-right %2$s">',
+            'after_widget' => '</li>',
+            'before_title' => '<h2 class="widgettitle dmbs-widget-title dmbs-widget-right-title">',
+            'after_title' => '</h2>',
+        ));
+
+        register_sidebar(array(
+            'name' => __('Left Sidebar', $textDomain),
+            'id' => 'dmbs-left-sidebar',
+            'description' => __('Widgets in this area will be shown on all posts and pages.', $textDomain),
+            'before_widget' => '<li id="%1$s" class="widget dmbs-widget dmbs-widget-left %2$s">',
+            'after_widget' => '</li>',
+            'before_title' => '<h2 class="widgettitle dmbs-widget-title dmbs-widget-left-title">',
+            'after_title' => '</h2>',
+        ));
+    }
+
+}//end devdmbootstrap_widgets_init
+add_action( 'widgets_init', 'devdmbootstrap_widgets_init' );
+
+/*
  * Include the Bootstrap Stylesheet and JS
  */
 

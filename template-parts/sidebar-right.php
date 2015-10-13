@@ -1,7 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 10/4/2015
- * Time: 4:20 PM
- */
+<div class="col-sm-3 dmbs-right">
+    <?php dynamic_sidebar( 'dmbs-right-sidebar' ); ?>
+</div>

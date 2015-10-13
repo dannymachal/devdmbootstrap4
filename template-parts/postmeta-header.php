@@ -3,7 +3,7 @@
     <div class="row">
 
         <div class="col-sm-8">
-            <span class="dmbs-post-date"><?php the_time('F jS, Y'); ?></span> <span class="dmbs-post-author"><?php the_author_posts_link(); ?></span>
+            <span class="dmbs-post-date"><?php the_time('F jS, Y'); ?></span> &#8226; <span class="dmbs-post-author"><?php the_author_posts_link(); ?></span>
         </div>
 
         <?php  if ( comments_open() ) : ?>
