@@ -1,3 +1,12 @@
-<div class="col-sm-3 dmbs-left">
-    <?php dynamic_sidebar( 'dmbs-left-sidebar' ); ?>
-</div>
+<?php
+
+    $leftSidebarSize = devdmbootstrap_column_size('left');
+
+    if ($leftSidebarSize != 0) :
+?>
+
+        <div class="col-sm-<?php echo $leftSidebarSize; ?> dmbs-left">
+            <?php dynamic_sidebar( 'dmbs-left-sidebar' ); ?>
+        </div>
+
+<?php endif; ?>

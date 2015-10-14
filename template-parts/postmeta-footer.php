@@ -1,7 +1,7 @@
 <div class="dmbs-post-meta-footer">
 
     <div class="dmbs-post-meta-categories">
-        <span class="fa fa-tags"></span> <?php the_category(', '); ?>
+        <?php _e('Posted In ','devdmbootstrap4'); the_category(', '); ?>
     </div>
 
     <?php if( has_tag() ) : ?>

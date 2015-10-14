@@ -114,8 +114,13 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         //enqueue the default style.css with the handle devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
 
-        //enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome
-        wp_enqueue_style('devdmbootstrap4-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+        //grab the Theme Mod Setting for Font Awesome
+        $loadFontAwesome = get_theme_mod('devdmbootstrap4_fontawesome_setting',1);
+
+        if ($loadFontAwesome == 1) {
+            //enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome
+            wp_enqueue_style('devdmbootstrap4-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+        }
 
         //eqnueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js
         wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/bootstrap4/js/bootstrap.min.js', array('jquery'), $themeVersion, true);
@@ -128,3 +133,30 @@ add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
  * Customizer
  */
 require get_template_directory() . '/includes/customizer.php';
+
+/*
+ * Calculate Column Sizes and return the value when called
+ */
+function devdmbootstrap_column_size($column = null) {
+
+    $columnSizes = array(
+        'left'  => '',
+        'right' => '',
+        'main'  => '',
+    );
+
+    if ($column != null && array_key_exists($column,$columnSizes)) {
+
+        $columnSizes = array(
+            'left' => get_theme_mod('devdmbootstrap4_leftsidebar_setting',0),
+            'right' => get_theme_mod('devdmbootstrap4_rightsidebar_setting',4),
+        );
+
+        $columnSizes['main'] = 12 - ($columnSizes['right'] + $columnSizes['left']);
+
+        return $columnSizes[$column];
+
+    }
+
+    return;
+}
