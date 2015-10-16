@@ -17,25 +17,6 @@
                     'walker'            => new devdmbootstrap_nav_walker())
             );
             ?>
-            <!-- Links -->
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="Preview">
-                        <a class="dropdown-item" href="#">Dropdown Link 1</a>
-                        <a class="dropdown-item" href="#">Dropdown Link 2</a>
-                        <a class="dropdown-item" href="#">Dropdown Link 3</a>
-                    </div>
-                </li>
-            </ul>
         </div>
     </div>
 </nav>
