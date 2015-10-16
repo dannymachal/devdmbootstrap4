@@ -39,7 +39,7 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
          * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
          */
         add_theme_support('post-thumbnails');
-        set_post_thumbnail_size(1200, 0, true);
+        set_post_thumbnail_size(1140, 300, array('center','center'));
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
