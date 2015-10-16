@@ -34,6 +34,29 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
         add_theme_support('title-tag');
 
         /*
+         * Add Theme Support for Custom Background Images and Colors
+         */
+        add_theme_support( 'custom-background' );
+
+        /*
+         * Add Theme Support for Custom Header (logo) image
+         */
+        add_theme_support( 'custom-header', array(
+            'default-image'          => 'http://placehold.it/350x150',
+            'random-default'         => false,
+            'width'                  => 350,
+            'height'                 => 150,
+            'flex-height'            => true,
+            'flex-width'             => true,
+            'default-text-color'     => '',
+            'header-text'            => false,
+            'uploads'                => true,
+            'wp-head-callback'       => '',
+            'admin-head-callback'    => '',
+            'admin-preview-callback' => '',
+        ));
+
+        /*
          * Enable support for Post Thumbnails on posts and pages.
          *
          * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
@@ -43,8 +66,8 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
-            'primary' => esc_html__('Header Menu', 'devdmbootstrap4'),
-            'secondary' => esc_html__('Footer Menu', 'devdmbootstrap4'),
+            'headermenu' => esc_html__('Header Menu', 'devdmbootstrap4'),
+            'footermenu' => esc_html__('Footer Menu', 'devdmbootstrap4'),
         ));
 
         /*
@@ -58,6 +81,13 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
             'gallery',
             'caption',
         ));
+
+        /*
+         * Set the max content width
+         */
+        if ( ! isset( $content_width ) ) {
+            $content_width = 1140;
+        }
 
     }
 
@@ -114,6 +144,9 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         //enqueue the default style.css with the handle devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
 
+        //enqueue the default WordPress Core CSS with the handle devdmbootstrap4-wordpresscore-css
+        wp_enqueue_style('devdmbootstrap4-wordpresscore-css', get_template_directory_uri() . '/assets/css/wordpresscore.css');
+
         //grab the Theme Mod Setting for Font Awesome
         $loadFontAwesome = get_theme_mod('devdmbootstrap4_fontawesome_setting',1);
 
@@ -149,7 +182,7 @@ function devdmbootstrap_column_size($column = null) {
 
         $columnSizes = array(
             'left' => get_theme_mod('devdmbootstrap4_leftsidebar_setting',0),
-            'right' => get_theme_mod('devdmbootstrap4_rightsidebar_setting',4),
+            'right' => get_theme_mod('devdmbootstrap4_rightsidebar_setting',3),
         );
 
         $columnSizes['main'] = 12 - ($columnSizes['right'] + $columnSizes['left']);
@@ -160,3 +193,8 @@ function devdmbootstrap_column_size($column = null) {
 
     return;
 }
+
+/**
+ * Nav Walker
+ */
+require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';

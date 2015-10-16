@@ -9,7 +9,7 @@
 
         <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>
 
-        <div class="col-sm-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main-wrapper">
+        <div class="col-sm-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
 
             <?php if ( have_posts() ) : ?>
 
