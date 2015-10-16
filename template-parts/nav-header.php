@@ -7,6 +7,16 @@
 
         <!-- Nav Content -->
         <div class="collapse navbar-toggleable-sm" id="nav-content">
+            <?php
+            wp_nav_menu( array(
+                    'theme_location'    => 'headermenu',
+                    'depth'             => 2,
+                    'container'         => '',
+                    'container_class'   => '',
+                    'menu_class'        => 'nav navbar-nav',
+                    'walker'            => new devdmbootstrap_nav_walker())
+            );
+            ?>
             <!-- Links -->
             <ul class="nav navbar-nav">
                 <li class="nav-item">
