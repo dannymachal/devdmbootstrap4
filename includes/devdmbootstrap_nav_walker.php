@@ -32,7 +32,7 @@ if (!class_exists('devdmbootstrap_nav_walker')) {
             $id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
             if (!$item->menu_item_parent) {
-                $output .= $indent . '<li' . $id . $class_names .'>' . PHP_EOL;
+                $output .= $indent . '<li' . $id . $class_names .'>';
             }
 
             $atts = array();
