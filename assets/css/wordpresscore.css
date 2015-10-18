@@ -110,7 +110,7 @@ a img.aligncenter {
 .size-large,
 .size-medium,
 .size-thumbnail,
-.dmbs-main img {
+.dmbs-post img {
     max-width: 100%;
     height: auto;
 }
