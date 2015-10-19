@@ -57,15 +57,15 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
             </div><!-- .comment-content -->
 
             <ul class="list-inline">
-                
-                <?php edit_comment_link( __( 'Edit' ), '<li class="edit-link">', '</li>' ); ?>
+
+                <?php edit_comment_link( __( 'Edit' ), '<li class="btn btn-sm btn-warning-outline edit-link dmbs-comment-edit-link">', '</li>' ); ?>
 
                 <?php
                 comment_reply_link( array_merge( $args, array(
                     'add_below' => 'div-comment',
                     'depth'     => $depth,
                     'max_depth' => $args['max_depth'],
-                    'before'    => '<li class="reply-link">',
+                    'before'    => '<li class="btn btn-sm btn-success-outline reply-link dmbs-comment-reply-link">',
                     'after'     => '</li>'
                 ) ) );
                 ?>

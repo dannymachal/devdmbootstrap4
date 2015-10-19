@@ -31,6 +31,8 @@
 
         <?php endif; ?>
 
+        <hr class="dmbs-comments-separator">
+
         <?php comment_form(); ?>
 
     </div>
