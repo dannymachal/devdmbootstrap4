@@ -14,7 +14,7 @@
                     'container'         => '',
                     'container_class'   => '',
                     'menu_class'        => 'nav navbar-nav',
-                    'walker'            => new devdmbootstrap_nav_walker())
+                    'walker'            => new devdmbootstrap_enhanced_nav_walker())
             );
             ?>
         </div>

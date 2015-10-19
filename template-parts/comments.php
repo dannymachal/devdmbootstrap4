@@ -1,4 +1,4 @@
-<?php if ( is_single() || is_page() && comments_open() ) : ?>
+<?php if ( (is_single() || is_page()) && comments_open() ) : ?>
 
     <div class="dmbs-comments">
 

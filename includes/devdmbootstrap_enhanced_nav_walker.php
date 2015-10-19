@@ -1,8 +1,8 @@
 <?php
 
-if (!class_exists('devdmbootstrap_nav_walker')) {
+if (!class_exists('devdmbootstrap_enhanced_nav_walker')) {
 
-    class devdmbootstrap_nav_walker extends Walker_Nav_Menu {
+    class devdmbootstrap_enhanced_nav_walker extends Walker_Nav_Menu {
 
         public function start_lvl( &$output, $depth = 0, $args = array() ) {
             $indent = str_repeat("\t", $depth);
@@ -84,8 +84,3 @@ if (!class_exists('devdmbootstrap_nav_walker')) {
     }
 
 }
-
-/*
- * Enqueue advanced Nav Scripts
- */
-

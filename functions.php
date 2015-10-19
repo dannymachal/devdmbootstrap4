@@ -199,6 +199,10 @@ function devdmbootstrap_column_size($column = null) {
  */
 require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';
 
+
+
+require get_template_directory() . '/includes/devdmbootstrap_enhanced_nav_walker.php';
+
 /**
  * Nav Walker
  */
