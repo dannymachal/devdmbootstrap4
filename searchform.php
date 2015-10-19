@@ -3,7 +3,7 @@
         <span class="sr-only"><?php echo __('Search for','dmbs_swatcher'); ?></span>
         <input type="search" class="search-field form-control" placeholder="<?php echo __('Search ...','dmbs_swatcher'); ?>" value="" name="s" title="<?php echo __('Search for:','dmbs_swatcher'); ?>">
               <span class="input-group-btn">
-                <button class="btn btn-default search-submit" type="submit" value="Search"><span class="glyphicon glyphicon-search"></span></button>
+                <button class="btn btn-primary search-submit" type="submit" value="Search"><span class="fa fa-search"></span></button>
               </span>
     </div>
 </form>

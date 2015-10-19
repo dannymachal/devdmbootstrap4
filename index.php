@@ -11,6 +11,8 @@
 
         <div class="col-sm-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
 
+            <?php get_template_part( 'template-parts/search' ); ?>
+
             <?php if ( have_posts() ) : ?>
 
                 <?php
@@ -57,10 +59,6 @@
                 // End the loop.
                 endwhile;
                 ?>
-
-            <?php else :  ?>
-
-                <?php get_404_template(); ?>
 
             <?php endif; ?>
         </div>

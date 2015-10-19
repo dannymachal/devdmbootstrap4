@@ -20,7 +20,7 @@
                         <article id="post-<?php the_ID(); ?>" <?php post_class('card dmbs-post'); ?>>
 
                             <header class="card-header dmbs-post-header">
-                                <?php the_title( sprintf( '<h2 class="dmbs-post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                                <h2 class="dmbs-post-title"><?php the_title(); ?></h2>
                                 <?php get_template_part('template-parts/postmeta','header'); ?>
                             </header>
 
@@ -59,10 +59,6 @@
                         // End the loop.
                     endwhile;
                     ?>
-
-                <?php else :  ?>
-
-                    <?php get_404_template(); ?>
 
                 <?php endif; ?>
             </div>
