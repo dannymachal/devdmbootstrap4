@@ -1,0 +1,53 @@
+// Core variables and mixins
+@import "../bootstrap4/../bootstrap4/variables";
+@import "../bootstrap4/mixins";
+
+// // Reset and dependencies
+@import "../bootstrap4/normalize";
+@import "../bootstrap4/print";
+
+// Core CSS
+@import "../bootstrap4/reboot";
+@import "../bootstrap4/type";
+@import "../bootstrap4/images";
+@import "../bootstrap4/code";
+@import "../bootstrap4/grid";
+@import "../bootstrap4/tables";
+@import "../bootstrap4/forms";
+@import "../bootstrap4/buttons";
+
+// // Components
+@import "../bootstrap4/animation";
+@import "../bootstrap4/dropdown";
+@import "../bootstrap4/button-group";
+@import "../bootstrap4/input-group";
+@import "../bootstrap4/custom-forms";
+@import "../bootstrap4/nav";
+@import "../bootstrap4/navbar";
+@import "../bootstrap4/card";
+@import "../bootstrap4/breadcrumb";
+@import "../bootstrap4/pagination";
+@import "../bootstrap4/pager";
+@import "../bootstrap4/labels";
+@import "../bootstrap4/jumbotron";
+@import "../bootstrap4/alert";
+@import "../bootstrap4/progress";
+@import "../bootstrap4/media";
+@import "../bootstrap4/list-group";
+@import "../bootstrap4/responsive-embed";
+@import "../bootstrap4/close";
+
+// Components w/ JavaScript
+@import "../bootstrap4/modal";
+@import "../bootstrap4/tooltip";
+@import "../bootstrap4/popover";
+@import "../bootstrap4/carousel";
+
+// Utility classes
+@import "../bootstrap4/utilities";
+@import "../bootstrap4/utilities-spacing";
+@import "../bootstrap4/utilities-responsive";
+
+// Import Theme Specific Classes and WordPress Core
+@import "wordpresscore";
+@import "theme";

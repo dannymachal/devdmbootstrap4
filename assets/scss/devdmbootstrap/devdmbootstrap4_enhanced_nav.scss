@@ -2,13 +2,13 @@
     margin: 0px !important;
 }
 
-.dmbs-header-nav-mobile-toggle {
+.dmbs-header-nav-mobile-toggle, .dmbs-footer-nav-mobile-toggle {
     display: none;
 }
 
 @media (max-width: 992px) {
 
-    .dmbs-header-nav-mobile-toggle {
+    .dmbs-header-nav-mobile-toggle, .dmbs-footer-nav-mobile-toggle {
         display: block;
     }
 

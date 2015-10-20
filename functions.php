@@ -139,13 +139,10 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         global $themeVersion;
 
         //enqueue the default Bootstrap 4 CSS with the handle devdmbootstrap4-css
-        wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/bootstrap4/css/bootstrap.min.css');
+        wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4.css');
 
         //enqueue the default style.css with the handle devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
-
-        //enqueue the default WordPress Core CSS with the handle devdmbootstrap4-wordpresscore-css
-        wp_enqueue_style('devdmbootstrap4-wordpresscore-css', get_template_directory_uri() . '/assets/css/wordpresscore.css');
 
         //grab the Theme Mod Setting for Font Awesome
         $loadFontAwesome = get_theme_mod('devdmbootstrap4_fontawesome_setting',1);
@@ -156,7 +153,7 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         }
 
         //enqueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js
-        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/bootstrap4/js/bootstrap.min.js', array('jquery'), $themeVersion, true);
+        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4/bootstrap.min.js', array('jquery'), $themeVersion, true);
 
     }
 }// end devdmbootstrap_scripts
@@ -200,19 +197,18 @@ function devdmbootstrap_column_size($column = null) {
 require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';
 
 //grab the Theme Mod Setting for Font Awesome
-$loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting',1);
+$loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
 
 if ($loadEnhancedMenu == 1) {
 
     //enqueue Enhanced Menu System CSS with the handle devdmbootstrap4-enhanced-menu-css
-    wp_enqueue_style('devdmbootstrap4-enhanced-menu-css', get_template_directory_uri() . '/assets/css/devdmbootstrap4_enhanced_nav.css');
+    wp_enqueue_style('devdmbootstrap4-enhanced-nav-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4_enhanced_nav.css');
 
     //enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
-    wp_enqueue_script('devdmbootstrap4-enhanced-menu-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $themeVersion, true);
+    wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $themeVersion, true);
 
     require get_template_directory() . '/includes/devdmbootstrap_enhanced_nav_walker.php';
 }
-
 
 
 /**
