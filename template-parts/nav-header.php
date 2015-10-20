@@ -1,15 +1,17 @@
 <?php if ( has_nav_menu( 'headermenu' ) ) : ?>
 
-    <nav class="dmbs-header-navbar navbar navbar-dark bg-inverse">
-        <div class="container">
-            <!-- Toggle Button -->
-            <button class="navbar-toggler dmbs-header-nav-mobile-toggle" type="button" data-toggle="collapse" data-target="#header-nav-content">
-                <span class="fa fa-bars"></span> <?php _e('Menu','devdmbootstrap4'); ?>
-            </button>
+    <div class="container dmbs-header-nav-container">
+        <div class="row">
+            <nav class="navbar navbar-dark bg-inverse dmbs-header-navbar">
 
-            <!-- Nav Content -->
-            <div class="collapse navbar-toggleable-md" id="header-nav-content">
-                <?php
+                <!-- Toggle Button -->
+                <button class="navbar-toggler dmbs-header-nav-mobile-toggle" type="button" data-toggle="collapse" data-target="#header-nav-content">
+                    <span class="fa fa-bars"></span> <?php _e('Menu','devdmbootstrap4'); ?>
+                </button>
+
+                <!-- Nav Content -->
+                <div class="collapse navbar-toggleable-md" id="header-nav-content">
+                    <?php
 
                     //grab the Theme Mod Setting for Enabling the Enhanced Menu Walker
                     $loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
@@ -28,9 +30,10 @@
                             'menu_class'        => 'dmbs-header-nav nav navbar-nav',
                             'walker'            => $dmbswalker)
                     );
-                ?>
-            </div>
-        </div>
-    </nav>
+                    ?>
+                </div>
 
+            </nav>
+        </div>
+    </div>
 <?php endif; ?>

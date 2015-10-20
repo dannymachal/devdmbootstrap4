@@ -1,2 +1,144 @@
-@import "nav";
+.dmbs-body { }
 
+.dmbs-header {
+
+  .dmbs-header-left {
+
+    text-align: center;
+
+    .dmbs-logo-link { }
+    .dmbs-logo-image {
+
+      max-width: 100%;
+      height: auto;
+
+    }
+
+  }
+
+  .dmbs-header-right {
+
+    .dmbs-header-title {
+
+      @media (max-width: map-get($grid-breakpoints, 'sm')) {
+        font-size: 12px;
+        text-align: center;
+      }
+
+    }
+    .dmbs-header-description { }
+
+  }
+
+}
+
+.dmbs-header-nav-container {
+
+  .dmbs-header-navbar { }
+  .dmbs-header-nav-mobile-toggle { }
+  .dmbs-header-nav { }
+
+}
+
+.dmbs-content-wrapper {
+
+  margin-top: 16px;
+
+  .dmbs-main {
+
+    .dmbs-post {
+
+      .dmbs-post-header { }
+      .dmbs-post-title { }
+      .dmbs-post-meta-header { }
+      .dmbs-post-date { }
+      .dmbs-post-author { }
+      .dmbs-post-comment-counter {
+
+        text-align: right;
+
+      }
+      .dmbs-post-featured-image { }
+      .dmbs-post-content { }
+      .dmbs-post-footer { }
+      .dmbs-post-meta-footer { }
+      .dmbs-post-meta-categories { }
+
+    }
+
+    .dmbs-comments {
+      
+      h4 {
+        &#comments {
+          margin-bottom: 16px;
+        }
+      }
+
+      ul.list-inline {
+        margin-left: 0px;
+      }
+
+      .dmbs-comment-reply-link, .dmbs-comment-edit-link {
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    hr.dmbs-comments-separator {
+
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+    }
+
+  }
+
+}
+
+.dmbs-widget {
+
+  list-style: none;
+  margin-bottom: 16px;
+
+  .dmbs-widget-title {
+
+  }
+
+}
+
+.dmbs-right {
+
+  .dmbs-widget-right { }
+  .dmbs-widget-right-title { }
+
+}
+
+.dmbs-left {
+
+  .dmbs-widget-left { }
+  .dmbs-widget-left-title { }
+
+}
+
+.dmbs-footer-nav-container {
+
+  .dmbs-footer-navbar { }
+  .dmbs-footer-nav { }
+
+}
+
+.dmbs-author-credits {
+
+  margin-top: 16px;
+
+  p {
+    text-align: center;
+  }
+
+}
+
+@import "nav";

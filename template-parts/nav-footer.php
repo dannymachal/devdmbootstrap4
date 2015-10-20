@@ -1,8 +1,8 @@
 <?php if ( has_nav_menu( 'footermenu' ) ) : ?>
 
-    <div class="dmbs-footer-nav-container container dropup">
+    <div class="container dropup dmbs-footer-nav-container">
 
-        <nav class="dmbs-footer-navbar navbar navbar-dark bg-inverse">
+        <nav class="navbar navbar-dark bg-inverse dmbs-footer-navbar">
 
                 <!-- Nav Content -->
                 <div class="navbar-toggleable-md" id="footer-nav-content">
