@@ -107,6 +107,25 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 )
             );
 
+            //Enable Enhanced Menu
+            $wp_customize->add_setting( 'devdmbootstrap4_enhanced_menu_setting',
+                array(
+                    'default' => 1,
+                    'type' => 'theme_mod',
+                    'capability' => 'edit_theme_options',
+                    'transport' => 'refresh',
+                )
+            );
+
+            $wp_customize->add_control( 'devdmbootstrap4_enhanced_menu',
+                array(
+                    'label'    => __( 'Use the Enhanced menu system?', 'devdmbootstrap4' ),
+                    'section'  => 'devdmbootstrap_options',
+                    'settings' => 'devdmbootstrap4_enhanced_menu_setting',
+                    'type'     => 'checkbox'
+                )
+            );
+
             //Give Danny his Credit
             $wp_customize->add_setting( 'devdmbootstrap4_show_credit_setting',
                 array(
