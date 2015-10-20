@@ -37,11 +37,19 @@ if (!class_exists('devdmbootstrap_enhanced_nav_walker')) {
 
             $atts = array();
             $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
-            $atts['target'] = ! empty( $item->target )     ? $item->target     : '';
-            $atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
-            $atts['href']   = ! empty( $item->url )        ? $item->url        : '';
+            $atts['target'] = ! empty( $item->target ) ? $item->target     : '';
+            $atts['rel']    = ! empty( $item->xfn )    ? $item->xfn        : '';
+            $atts['href']   = ! empty( $item->url )    ? $item->url        : '';
             $atts['class'] = 'nav-link';
 
+            /*
+             * Set the Font Awesome Icon Integration
+             */
+            $faicon = '';
+            if (substr(trim($item->attr_title),0,2) == "fa") {
+                $faicon = '<i class="'. $item->attr_title .'"></i> ';
+                $atts['title'] = '';
+            }
             if ($this->has_children) {
                 $atts['class'] = 'nav-link dropdown-toggle';
                 $atts['data-toggle'] = "dropdown";
@@ -65,7 +73,7 @@ if (!class_exists('devdmbootstrap_enhanced_nav_walker')) {
             }
 
             $item_output = $args->before;
-            $item_output .= '<a'. $attributes .'>';
+            $item_output .= '<a'. $attributes . '>' . $faicon;
             /** This filter is documented in wp-includes/post-template.php */
             $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
             $item_output .= '</a>' . PHP_EOL;

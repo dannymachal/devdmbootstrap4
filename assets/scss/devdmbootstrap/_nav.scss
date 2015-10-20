@@ -1,0 +1,36 @@
+.dropdown-menu {
+  margin: 0px !important;
+}
+
+.dmbs-header-nav-mobile-toggle, .dmbs-footer-nav-mobile-toggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+
+  .dmbs-header-nav-mobile-toggle, .dmbs-footer-nav-mobile-toggle {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block !important;
+    position: relative !important;
+    padding: 0px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+
+  .navbar {
+    border-right: 0px;
+  }
+
+}

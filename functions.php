@@ -196,13 +196,10 @@ function devdmbootstrap_column_size($column = null) {
  */
 require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';
 
-//grab the Theme Mod Setting for Font Awesome
+//grab the Theme Mod Setting for Enabling the Enhanced Menu Walker
 $loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
 
 if ($loadEnhancedMenu == 1) {
-
-    //enqueue Enhanced Menu System CSS with the handle devdmbootstrap4-enhanced-menu-css
-    wp_enqueue_style('devdmbootstrap4-enhanced-nav-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4_enhanced_nav.css');
 
     //enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
     wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $themeVersion, true);

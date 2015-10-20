@@ -1,7 +1,7 @@
 jQuery(function($) {
 
     // Check if the mobile toggle bar is visible.
-    var mobileToggleVisible = $('.navbar-toggler').css('display');
+    var mobileToggleVisible = $('.dmbs-header-navbar .navbar-toggler').css('display');
 
     // Determine if this is a Touch Enabled Device.
     var isTouchDevice = 'ontouchstart' in document.documentElement;
@@ -13,7 +13,7 @@ jQuery(function($) {
 
     if ( mobileToggleVisible == 'none' && !isTouchDevice){
 
-        $('.navbar .dropdown').hover(function() {
+        $('.dmbs-header-navbar.navbar .dropdown, .dmbs-footer-navbar.navbar .dropdown').hover(function() {
 
             $(this).find('.dropdown-menu').first().stop(true, true).slideToggle(200);
 
@@ -24,7 +24,7 @@ jQuery(function($) {
         });
 
         //allow the drop down parents to be clickable links.
-        $('.navbar .dropdown > a').click(function(){
+        $('.dmbs-header-navbar.navbar .dropdown > a, .dmbs-footer-navbar.navbar .dropdown > a').click(function(){
 
             location.href = this.href;
 
@@ -39,7 +39,7 @@ jQuery(function($) {
 
     if( mobileToggleVisible != 'none' ) {
 
-        $('.navbar .dropdown > a').click(function(){
+        $('.dmbs-header-navbar.navbar .dropdown > a, .dmbs-footer-navbar.navbar .dropdown > a').click(function(){
 
             location.href = this.href;
 
