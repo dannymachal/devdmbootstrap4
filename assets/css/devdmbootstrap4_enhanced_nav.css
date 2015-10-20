@@ -1,9 +1,12 @@
+.dropdown-menu {
+    margin: 0px !important;
+}
+
 @media (max-width: 48em) {
 
     .dropdown-menu {
         display: block !important;
         position: relative !important;
-        margin: 0px !important;
         padding: 0px !important;
         width: 100% !important;
         text-align: center !important;

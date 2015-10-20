@@ -1,6 +1,12 @@
 jQuery(function($) {
 
-    if ( $('.navbar-toggler').css('display') == 'none' ){
+    //check if the moble toggle bar is visible
+    var mobileToggleVisible = $('.navbar-toggler').css('display');
+
+    // Touch Device Detection
+    var isTouchDevice = 'ontouchstart' in document.documentElement;
+
+    if ( mobileToggleVisible == 'none' ){
 
         $('.navbar .dropdown').hover(function() {
 
@@ -12,12 +18,15 @@ jQuery(function($) {
 
         });
 
+    }
+
+    if( !isTouchDevice || mobileToggleVisible != 'none' ) {
+
         $('.navbar .dropdown > a').click(function(){
 
             location.href = this.href;
 
         });
-
     }
 
 });
