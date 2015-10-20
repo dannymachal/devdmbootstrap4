@@ -1,12 +1,17 @@
 jQuery(function($) {
 
-    //check if the moble toggle bar is visible
+    // Check if the mobile toggle bar is visible.
     var mobileToggleVisible = $('.navbar-toggler').css('display');
 
-    // Touch Device Detection
+    // Determine if this is a Touch Enabled Device.
     var isTouchDevice = 'ontouchstart' in document.documentElement;
 
-    if ( mobileToggleVisible == 'none' ){
+    /*
+        Test for the mobile menu toggle being hidden and determine this IS NOT a touch device. With these two conditions
+        this is most likely a mouse pointer enabled device that can handle hover events.
+     */
+
+    if ( mobileToggleVisible == 'none' && !isTouchDevice){
 
         $('.navbar .dropdown').hover(function() {
 
@@ -18,9 +23,21 @@ jQuery(function($) {
 
         });
 
+        //allow the drop down parents to be clickable links.
+        $('.navbar .dropdown > a').click(function(){
+
+            location.href = this.href;
+
+        });
+
     }
 
-    if( !isTouchDevice || mobileToggleVisible != 'none' ) {
+    /*
+        Detect if the mobile toggle button IS showing and allow the parent drop down items to be clickable links. This is mostly to handle
+        tablet devices who can potentially display a regular menu in landscape mode and then the mobile menu when in portrait mode.
+     */
+
+    if( mobileToggleVisible != 'none' ) {
 
         $('.navbar .dropdown > a').click(function(){
 
