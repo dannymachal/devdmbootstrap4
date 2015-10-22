@@ -41,10 +41,11 @@
                             <?php endif; ?>
 
                             <?php
-                            the_content( sprintf(
-                                wp_kses( esc_html__( 'Continue reading %s', 'devdmbootstrap4' ), array( 'span' => array( 'class' => array() ) ) ),
-                                the_title( '<span class="screen-reader-text">"', '"</span>', false )
-                            ) );
+                                the_content( sprintf(
+                                    wp_kses( esc_html__( 'Continue reading %s', 'devdmbootstrap4' ), array( 'span' => array( 'class' => array() ) ) ),
+                                    the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                ) );
+                                wp_link_pages();
                             ?>
 
                         </div>
@@ -58,6 +59,14 @@
                 <?php
                 // End the loop.
                 endwhile;
+
+                // Previous/next page navigation.
+                the_posts_pagination( array(
+                    'prev_text'          => '<span class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-o-left"></i> ' . __( 'Previous page', 'devdmbootstrap4' ) . '</span>',
+                    'next_text'          => '<span class="btn btn-primary btn-sm">' .__( 'Next page', 'devdmbootstrap4' ) . ' <i class="fa fa-arrow-circle-o-right"></i></span>',
+                    'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'devdmbootstrap4' ) . ' </span>',
+                ) );
+
                 ?>
 
             <?php endif; ?>
