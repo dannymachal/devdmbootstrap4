@@ -149,7 +149,7 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
 
         if ($loadFontAwesome == 1) {
             //enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome
-            wp_enqueue_style('devdmbootstrap4-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+            wp_enqueue_style('devdmbootstrap4-fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
         }
 
         //enqueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js
@@ -201,8 +201,15 @@ $loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
 
 if ($loadEnhancedMenu == 1) {
 
-    //enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
-    wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $themeVersion, true);
+    function devdmbootstrap_fontawesome_enqueue() {
+
+        global $themeVersion;
+
+        //enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
+        wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $themeVersion, true);
+    }
+
+    add_action('wp_enqueue_scripts','devdmbootstrap_fontawesome_enqueue');
 
     require get_template_directory() . '/includes/devdmbootstrap_enhanced_nav_walker.php';
 }

@@ -100,7 +100,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
 
             $wp_customize->add_control( 'devdmbootstrap4_fontawesome',
                 array(
-                    'label'    => __( 'Load Font Awesome Icon Library?', 'devdmbootstrap4' ),
+                    'label'    => __( 'Load Font Awesome Icon Library (v4.4.0)?', 'devdmbootstrap4' ),
                     'section'  => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_fontawesome_setting',
                     'type'     => 'checkbox'

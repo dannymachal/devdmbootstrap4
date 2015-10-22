@@ -43,13 +43,13 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
                 <span class="fa fa-calendar"></span>
                 <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
                     <time datetime="<?php comment_time( 'c' ); ?>">
-                        <?php printf( _x( '%1$s at %2$s', '1: date, 2: time' ), get_comment_date(), get_comment_time() ); ?>
+                        <?php printf( _x( '%1$s at %2$s', '1: date, 2: time' ,'devdmbootstrap4'), get_comment_date(), get_comment_time() ); ?>
                     </time>
                 </a>
             </div><!-- .comment-metadata -->
 
             <?php if ( '0' == $comment->comment_approved ) : ?>
-                <p class="comment-awaiting-moderation label label-info"><?php _e( 'Your comment is awaiting moderation.' ); ?></p>
+                <p class="comment-awaiting-moderation label label-info"><?php _e( 'Your comment is awaiting moderation.' ,'devdmbootstrap4' ); ?></p>
             <?php endif; ?>
 
             <div class="comment-content">
@@ -58,7 +58,7 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 
             <ul class="list-inline">
 
-                <?php edit_comment_link( __( 'Edit' ), '<li class="btn btn-sm btn-warning-outline edit-link dmbs-comment-edit-link">', '</li>' ); ?>
+                <?php edit_comment_link( __( 'Edit', 'devdmbootstrap4'), '<li class="btn btn-sm btn-warning-outline edit-link dmbs-comment-edit-link">', '</li>' ); ?>
 
                 <?php
                 comment_reply_link( array_merge( $args, array(

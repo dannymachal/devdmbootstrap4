@@ -23,7 +23,7 @@ function devdmbootstrap4__comment_form_fields( $fields ) {
             esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div>',
 
         'url'    =>
-            '<div class="form-group comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
+            '<div class="form-group comment-form-url"><label for="url">' . __( 'Website', 'devdmbootstrap4') . '</label> ' .
             '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) .
             ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'
     );
@@ -41,7 +41,7 @@ function devdmbootstrap4_comment_form( $args ) {
 
     $args['comment_field'] = '
         <div class="form-group comment-form-comment">
-            <label for="comment">' . _x( 'Comment', 'noun' ) . '</label>
+            <label for="comment">' . _x( 'Comment', 'noun', 'devdmbootstrap4') . '</label>
             <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
         </div>
         ';
@@ -50,7 +50,7 @@ function devdmbootstrap4_comment_form( $args ) {
 
     $args['logged_in_as'] = '<p class="logged-in-as">' .
     sprintf(
-        __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" class="btn btn-sm btn-danger" title="Log out of this account"><span class="fa fa-sign-out"></span> Log out?</a>' ),
+        __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" class="btn btn-sm btn-danger" title="Log out of this account"><span class="fa fa-sign-out"></span> Log out?</a>','devdmbootstrap4' ),
         admin_url( 'profile.php' ),
         $current_user->display_name,
         wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
