@@ -7,7 +7,7 @@
         <div class="container dmbs-author-credits">
             <div class="row">
                 <div class="col-sm-12">
-                    <p><a href="http://devdm.com"><?php _e('DevDmBootstrap4 Created by Danny Machal (DevDm.com)','devdmbootstrap4'); ?></a></p>
+                    <p><a href="<?php echo esc_url(devdmbootstrap4_credit_link()); ?>"><?php _e('DevDmBootstrap4 Created by Danny Machal (DevDm.com)','devdmbootstrap4'); ?></a></p>
                 </div>
             </div>
         </div>

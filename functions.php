@@ -38,6 +38,8 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
          */
         add_theme_support( 'custom-background' );
 
+        add_editor_style(get_template_directory_uri() . '/assets/css/devdmbootstrap/editor-style.css');
+
         /*
          * Add Theme Support for Custom Header (logo) image
          */

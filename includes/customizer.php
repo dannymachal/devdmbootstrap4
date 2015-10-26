@@ -149,6 +149,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
             $wp_customize->get_setting( 'blogdescription' )->transport = 'refresh';
 
         }
+        
     }
 
     add_action( 'customize_register' , array( 'devdmbootstrap_Customize' , 'register' ) );

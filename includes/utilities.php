@@ -60,3 +60,8 @@ function devdmbootstrap4_comment_form( $args ) {
 }
 
 add_filter( 'comment_form_defaults', 'devdmbootstrap4_comment_form' );
+
+function devdmbootstrap4_credit_link() {
+    $link = "http://devdm.com";
+    return $link;
+}
