@@ -149,7 +149,11 @@ if (!class_exists('devdmbootstrap_Customize')) {
             $wp_customize->get_setting( 'blogdescription' )->transport = 'refresh';
 
         }
-        
+
+        public function devdmbootstrap4_sanitize_checkbox() {
+
+        }
+
     }
 
     add_action( 'customize_register' , array( 'devdmbootstrap_Customize' , 'register' ) );
