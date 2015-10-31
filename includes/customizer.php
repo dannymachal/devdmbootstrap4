@@ -21,7 +21,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
-                    'transport' => 'refresh',
+                    'transport' => 'refresh'
                 )
             );
 
@@ -94,7 +94,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
-                    'transport' => 'refresh',
+                    'transport' => 'refresh'
                 )
             );
 
@@ -113,7 +113,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
-                    'transport' => 'refresh',
+                    'transport' => 'refresh'
                 )
             );
 
@@ -133,6 +133,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
+                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
                 )
             );
 
@@ -150,8 +151,13 @@ if (!class_exists('devdmbootstrap_Customize')) {
 
         }
 
-        public function devdmbootstrap4_sanitize_checkbox() {
+        public function devdmbootstrap_sanitize_checkbox($value) {
 
+            if ($value == 1) {
+                return $value;
+            }
+
+            return '';
         }
 
     }
@@ -159,3 +165,4 @@ if (!class_exists('devdmbootstrap_Customize')) {
     add_action( 'customize_register' , array( 'devdmbootstrap_Customize' , 'register' ) );
 
 }
+
