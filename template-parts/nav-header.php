@@ -1,4 +1,4 @@
-<?php if ( has_nav_menu( 'headermenu' ) ) : ?>
+<?php if ( has_nav_menu( 'main_menu' ) ) : ?>
 
     <div class="container dmbs-header-nav-container">
         <div class="row">
@@ -23,12 +23,13 @@
                     }
 
                     wp_nav_menu( array(
-                            'theme_location'    => 'headermenu',
+                            'theme_location'    => 'main_menu',
                             'depth'             => 2,
                             'container'         => '',
                             'container_class'   => '',
                             'menu_class'        => 'dmbs-header-nav nav navbar-nav',
-                            'walker'            => $dmbswalker)
+                            'walker'            => $dmbswalker
+                            )
                     );
                     ?>
                 </div>

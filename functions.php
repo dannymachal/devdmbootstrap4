@@ -68,8 +68,8 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
-            'headermenu' => esc_html__('Header Menu', 'devdmbootstrap4'),
-            'footermenu' => esc_html__('Footer Menu', 'devdmbootstrap4'),
+            'main_menu' => esc_html__('Main Menu', 'devdmbootstrap4'),
+            'footer_menu' => esc_html__('Footer Menu', 'devdmbootstrap4'),
         ));
 
         /*

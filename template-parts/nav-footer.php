@@ -1,4 +1,4 @@
-<?php if ( has_nav_menu( 'footermenu' ) ) : ?>
+<?php if ( has_nav_menu( 'footer_menu' ) ) : ?>
 
     <div class="container dropup dmbs-footer-nav-container">
 
@@ -18,12 +18,13 @@
                     }
 
                     wp_nav_menu( array(
-                            'theme_location'    => 'footermenu',
+                            'theme_location'    => 'footer_menu',
                             'depth'             => 2,
                             'container'         => '',
                             'container_class'   => '',
                             'menu_class'        => 'dmbs-footer-nav nav navbar-nav',
-                            'walker'            => $dmbswalker)
+                            'walker'            => $dmbswalker
+                        )
                     );
                     ?>
                 </div>
