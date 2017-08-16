@@ -1,48 +1,36 @@
 <?php
-/*
- * Welcome to DevDmBootstrap4 a simple to use barebones theme for WordPress theme developers wishing to use the Twitter Bootstrap 4 frontend framework.
- *
- * Current Bootstrap Version: 4.0 Alpha
- *
+/**
+ * Welcome to DevDmBootstrap4 a simple to use barebones theme for WordPress theme developers wishing to use the Twitter
+ * Bootstrap 4.x frontend framework.
  */
 
-/*
- * Global Variables
- */
-$themeVersion = "1.0";
-
-/*
- * Setup the theme defaults
+/**
+ * Setup the theme defaults.
  */
 
 if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
-
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      */
     function devdmbootstrap_setup()
     {
 
+        // Load up the Text domain.
         load_theme_textdomain('devdmbootstrap4', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
 
-        /*
-         * Let WordPress manage the document title.
-         */
+        // Let WordPress manage the document title.
         add_theme_support('title-tag');
 
-        /*
-         * Add Theme Support for Custom Background Images and Colors
-         */
+        // Add Theme Support for Custom Background Images and Colors
         add_theme_support( 'custom-background' );
 
+        // Add Editor stylesheet.
         add_editor_style(get_template_directory_uri() . '/assets/css/devdmbootstrap/editor-style.css');
 
-        /*
-         * Add Theme Support for Custom Header (logo) image
-         */
+        // Add Theme Support for Custom Header (logo) image
         add_theme_support( 'custom-header', array(
             'default-image'          => 'http://placehold.it/350x150',
             'random-default'         => false,
@@ -58,7 +46,7 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
             'admin-preview-callback' => '',
         ));
 
-        /*
+        /**
          * Enable support for Post Thumbnails on posts and pages.
          *
          * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
@@ -84,20 +72,17 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
             'caption',
         ));
 
-        /*
-         * Set the max content width
-         */
+        // Set the max content width
         if ( ! isset( $content_width ) ) {
             $content_width = 1140;
         }
 
     }
 
-} //end devdmbootstrap_setup
+}
 add_action( 'after_setup_theme', 'devdmbootstrap_setup' );
 
-
-/*
+/**
  * Register left and right Sidebar
  */
 if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
@@ -126,39 +111,37 @@ if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
         ));
     }
 
-}//end devdmbootstrap_widgets_init
+}
 add_action( 'widgets_init', 'devdmbootstrap_widgets_init' );
 
-/*
- * Include the Bootstrap Stylesheet and JS
+/**
+ * Include the Bootstrap 4.x Stylesheet and JS
  */
-
 if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
 
     function devdmbootstrap_scripts()
     {
+        $wpTheme = wp_get_theme();
 
-        global $themeVersion;
-
-        //enqueue the default Bootstrap 4 CSS with the handle devdmbootstrap4-css
+        // Enqueue the default Bootstrap 4 CSS with the handle devdmbootstrap4-css
         wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4.css');
 
-        //enqueue the default style.css with the handle devdmbootstrap4-stylesheet
+        // Enqueue the default style.css with the handle devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
 
-        //grab the Theme Mod Setting for Font Awesome
+        // Grab the Theme Mod Setting for Font Awesome.
         $loadFontAwesome = get_theme_mod('devdmbootstrap4_fontawesome_setting',1);
 
         if ($loadFontAwesome == 1) {
-            //enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome
-            wp_enqueue_style('devdmbootstrap4-fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
+            // Enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome.
+            wp_enqueue_style('devdmbootstrap4-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
         }
 
-        //enqueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js
-        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4/bootstrap.min.js', array('jquery'), $themeVersion, true);
+        // Enqueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js.
+        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4/bootstrap.min.js', array('jquery'), $wpTheme->get( 'Version' ), true);
 
     }
-}// end devdmbootstrap_scripts
+}
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
 
 /**
@@ -166,7 +149,7 @@ add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
  */
 require get_template_directory() . '/includes/customizer.php';
 
-/*
+/**
  * Calculate Column Sizes and return the value when called
  */
 function devdmbootstrap_column_size($column = null) {
@@ -198,17 +181,16 @@ function devdmbootstrap_column_size($column = null) {
  */
 require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';
 
-//grab the Theme Mod Setting for Enabling the Enhanced Menu Walker
+// Grab the Theme Mod Setting for Enabling the Enhanced Menu Walker.
 $loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
 
 if ($loadEnhancedMenu == 1) {
 
     function devdmbootstrap_fontawesome_enqueue() {
+        $wpTheme = wp_get_theme();
 
-        global $themeVersion;
-
-        //enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
-        wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $themeVersion, true);
+        // Enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
+        wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $wpTheme->get( 'Version' ), true);
     }
 
     add_action('wp_enqueue_scripts','devdmbootstrap_fontawesome_enqueue');
@@ -218,6 +200,6 @@ if ($loadEnhancedMenu == 1) {
 
 
 /**
- * Nav Walker
+ * Utilities
  */
 require get_template_directory() . '/includes/utilities.php';
