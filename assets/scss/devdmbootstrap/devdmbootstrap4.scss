@@ -1,12 +1,7 @@
-// Core variables and mixins
+@import "../bootstrap4x/functions";
 @import "../bootstrap4x/variables";
 @import "../bootstrap4x/mixins";
-
-// // Reset and dependencies
-@import "../bootstrap4x/normalize";
 @import "../bootstrap4x/print";
-
-// Core CSS
 @import "../bootstrap4x/reboot";
 @import "../bootstrap4x/type";
 @import "../bootstrap4x/images";
@@ -15,9 +10,7 @@
 @import "../bootstrap4x/tables";
 @import "../bootstrap4x/forms";
 @import "../bootstrap4x/buttons";
-
-// // Components
-@import "../bootstrap4x/animation";
+@import "../bootstrap4x/transitions";
 @import "../bootstrap4x/dropdown";
 @import "../bootstrap4x/button-group";
 @import "../bootstrap4x/input-group";
@@ -27,26 +20,18 @@
 @import "../bootstrap4x/card";
 @import "../bootstrap4x/breadcrumb";
 @import "../bootstrap4x/pagination";
-@import "../bootstrap4x/pager";
-@import "../bootstrap4x/labels";
+@import "../bootstrap4x/badge";
 @import "../bootstrap4x/jumbotron";
 @import "../bootstrap4x/alert";
 @import "../bootstrap4x/progress";
 @import "../bootstrap4x/media";
 @import "../bootstrap4x/list-group";
-@import "../bootstrap4x/responsive-embed";
 @import "../bootstrap4x/close";
-
-// Components w/ JavaScript
 @import "../bootstrap4x/modal";
 @import "../bootstrap4x/tooltip";
 @import "../bootstrap4x/popover";
 @import "../bootstrap4x/carousel";
-
-// Utility classes
 @import "../bootstrap4x/utilities";
-@import "../bootstrap4x/utilities-spacing";
-@import "../bootstrap4x/utilities-responsive";
 
 // Import Theme Specific Classes and WordPress Core
 @import "wordpresscore";

@@ -123,23 +123,25 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
     {
         $wpTheme = wp_get_theme();
 
-        // Enqueue the default Bootstrap 4 CSS with the handle devdmbootstrap4-css
+        // Enqueue the default Bootstrap 4.x CSS with the name devdmbootstrap4-css
         wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4.css');
 
-        // Enqueue the default style.css with the handle devdmbootstrap4-stylesheet
+        // Enqueue the default style.css with the name devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
 
         // Grab the Theme Mod Setting for Font Awesome.
         $loadFontAwesome = get_theme_mod('devdmbootstrap4_fontawesome_setting',1);
 
         if ($loadFontAwesome == 1) {
-            // Enqueue Font Awesome Icon Set with the handle devdmbootstrap4-fontawesome.
+            // Enqueue Font Awesome Icon Set with the name devdmbootstrap4-fontawesome.
             wp_enqueue_style('devdmbootstrap4-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
         }
 
-        // Enqueue the default Bootstrap 4 JS with the handle devdmbootstrap4-js.
-        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4/bootstrap.min.js', array('jquery'), $wpTheme->get( 'Version' ), true);
+        // Enqueue popper.min.js with the name devdmbootstrap4-popper-js
+        wp_enqueue_script('devdmbootstrap4-popper-js', get_template_directory_uri() . '/assets/js/bootstrap4x/popper.min.js', array('jquery'), $wpTheme->get( 'Version' ), true);
 
+        // Enqueue the default Bootstrap 4.x JS with the name devdmbootstrap4-js.
+        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4x/bootstrap.min.js', array('jquery'), $wpTheme->get( 'Version' ), true);
     }
 }
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
