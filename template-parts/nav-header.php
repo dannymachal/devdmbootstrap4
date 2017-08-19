@@ -2,15 +2,16 @@
 
     <div class="container dmbs-header-nav-container">
         <div class="row">
-            <nav class="navbar navbar-dark bg-inverse dmbs-header-navbar">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark dmbs-header-navbar">
 
                 <!-- Toggle Button -->
-                <button class="navbar-toggler dmbs-header-nav-mobile-toggle" type="button" data-toggle="collapse" data-target="#header-nav-content">
+                <button class="navbar-toggler dmbs-header-nav-mobile-toggle" type="button" data-toggle="collapse" data-target="#header-nav-content" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span> <?php _e('Menu','devdmbootstrap4'); ?>
                 </button>
 
                 <!-- Nav Content -->
-                <div class="collapse navbar-toggleable-md" id="header-nav-content">
+                <div class="collapse navbar-collapse" id="header-nav-content">
                     <?php
 
                     //grab the Theme Mod Setting for Enabling the Enhanced Menu Walker
@@ -27,7 +28,7 @@
                             'depth'             => 2,
                             'container'         => '',
                             'container_class'   => '',
-                            'menu_class'        => 'dmbs-header-nav nav navbar-nav',
+                            'menu_class'        => 'dmbs-header-nav navbar-nav mr-auto',
                             'walker'            => $dmbswalker
                             )
                     );
