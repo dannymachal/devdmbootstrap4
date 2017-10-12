@@ -123,6 +123,13 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
     {
         $wpTheme = wp_get_theme();
 
+        // Loading a new core version of jQuery for Bootstrap4
+        wp_deregister_script( 'jquery-core' );
+        wp_register_script( 'jquery-core', "https://code.jquery.com/jquery-3.1.1.min.js", array(), '3.1.1' );
+        wp_deregister_script( 'jquery-migrate' );
+        wp_register_script( 'jquery-migrate', "https://code.jquery.com/jquery-migrate-3.0.0.min.js", array(), '3.0.0' );
+
+
         // Enqueue the default Bootstrap 4.x CSS with the name devdmbootstrap4-css
         wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4.css');
 
@@ -141,7 +148,7 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         wp_enqueue_script('devdmbootstrap4-popper-js', get_template_directory_uri() . '/assets/js/bootstrap4x/popper.min.js', array('jquery'), $wpTheme->get( 'Version' ), true);
 
         // Enqueue the default Bootstrap 4.x JS with the name devdmbootstrap4-js.
-        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4x/bootstrap.min.js', array('jquery'), $wpTheme->get( 'Version' ), true);
+        wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4x/bootstrap.js', array('jquery'), $wpTheme->get( 'Version' ), true);
     }
 }
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );

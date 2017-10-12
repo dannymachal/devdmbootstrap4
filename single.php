@@ -17,20 +17,20 @@
                     // Start the loop.
                     while ( have_posts() ) : the_post(); ?>
 
-                        <article id="post-<?php the_ID(); ?>" <?php post_class('card dmbs-post'); ?>>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class('dmbs-post card'); ?>>
 
                             <header class="card-header dmbs-post-header">
-                                <h2 class="dmbs-post-title"><?php the_title(); ?></h2>
+                                <h1 class="dmbs-post-title"><?php the_title(); ?></h1>
                                 <?php get_template_part('template-parts/postmeta','header'); ?>
                             </header>
 
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <div class="dmbs-post-featured-image">
-                                    <?php the_post_thumbnail(); ?>
+                                    <?php the_post_thumbnail('featured', ['class' => 'card-img-top']); ?>
                                 </div>
                             <?php endif; ?>
 
-                            <div class="card-block dmbs-post-content">
+                            <div class="card-body dmbs-post-content">
 
                                 <?php if ( has_excerpt() ) : ?>
                                     <div class="dmbs-post-summary">

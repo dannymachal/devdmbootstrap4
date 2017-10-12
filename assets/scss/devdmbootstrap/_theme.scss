@@ -69,6 +69,21 @@
 
     .dmbs-post {
 
+      &.card {
+        margin-bottom: 3vw;
+      }
+
+      &.sticky {
+        .card-header {
+          &.dmbs-post-header {
+            a {
+              @extend .text-white;
+            }
+            @extend .text-white, .bg-primary;
+          }
+        }
+      }
+
       .dmbs-post-header { }
       .dmbs-post-title {
 
@@ -76,7 +91,9 @@
         word-wrap: break-word;
 
       }
-      .dmbs-post-meta-header { }
+      .dmbs-post-meta-header {
+        margin-top: 2vw;
+      }
       .dmbs-post-date { }
       .dmbs-post-author { }
       .dmbs-post-comment-counter {
@@ -98,25 +115,42 @@
     }
 
     .dmbs-comments {
+
+      $commentGutters: 1rem;
+
+      margin-top: $commentGutters;
+
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
       
       h4 {
         &#comments {
-          margin-bottom: 16px;
+          margin-bottom: $commentGutters;
         }
       }
 
-      .comment-content {
+      .media-left {
+        margin-right: $commentGutters;
+      }
 
+      .comment-content {
+        margin-top: $commentGutters;
       }
 
       ul.list-inline {
         margin-left: 0px;
       }
 
-      .dmbs-comment-reply-link, .dmbs-comment-edit-link {
+      .dmbs-comment-edit-link {
         a {
-          color: inherit;
-          text-decoration: none;
+          @extend .btn, .btn-sm, .btn-primary;
+        }
+      }
+
+      .dmbs-comment-reply-link {
+        a {
+          @extend .btn, .btn-sm, .btn-success;
         }
       }
 
@@ -163,7 +197,9 @@
 
 .dmbs-footer-nav-container {
 
-  .dmbs-footer-navbar { }
+  .dmbs-footer-navbar {
+    overflow: hidden;
+  }
   .dmbs-footer-nav { }
 
 }
@@ -179,5 +215,3 @@
   }
 
 }
-
-@import "nav";

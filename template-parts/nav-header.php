@@ -3,7 +3,7 @@
     <div class="container dmbs-header-nav-container">
         <div class="row">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark dmbs-header-navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark dmbs-header-navbar col-12">
 
                 <!-- Toggle Button -->
                 <button class="navbar-toggler dmbs-header-nav-mobile-toggle" type="button" data-toggle="collapse" data-target="#header-nav-content" aria-expanded="false" aria-label="Toggle navigation">

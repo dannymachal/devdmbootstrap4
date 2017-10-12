@@ -1,6 +1,6 @@
 <?php
 
-//if this was a search we display a page header with the results count. If there were no results we display the search form.
+// If this was a search we display a page header with the results count. If there were no results we display the search form.
 if (is_search()) :
 
     $total_results = $wp_query->found_posts;

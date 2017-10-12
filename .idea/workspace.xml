@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcccb50c-6bd2-4222-bc00-b24806410300" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive.php" afterPath="$PROJECT_DIR$/archive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css" afterPath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css.map" afterPath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_alert.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_alert.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_badge.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_badge.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_breadcrumb.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_breadcrumb.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_button-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_button-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_buttons.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_card.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_card.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_close.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_close.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_custom-forms.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_custom-forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_dropdown.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_dropdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_functions.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_functions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_grid.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_input-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_input-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_list-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_mixins.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_modal.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_nav.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_navbar.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_pagination.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_print.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_print.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_reboot.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_reboot.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_tables.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_tooltip.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_tooltip.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_transitions.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_transitions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_type.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_type.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_variables.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap-grid.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap-grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_background-variant.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_breakpoints.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_breakpoints.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_float.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_float.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_grid-framework.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_grid.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_hover.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_hover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_image.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_image.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_navbar-align.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_navbar-align.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_reset-text.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_screen-reader.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_screen-reader.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_text-emphasis.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_visibility.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_visibility.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_align.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_align.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_background.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_background.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_borders.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_borders.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_display.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_display.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_flex.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_flex.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_position.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_position.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_sizing.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_sizing.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_spacing.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_spacing.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_text.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_text.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss" afterPath="$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/devdmbootstrap/devdmbootstrap4.scss" afterPath="$PROJECT_DIR$/assets/scss/devdmbootstrap/devdmbootstrap4.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/comments.php" afterPath="$PROJECT_DIR$/template-parts/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/nav-footer.php" afterPath="$PROJECT_DIR$/template-parts/nav-footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/nav-header.php" afterPath="$PROJECT_DIR$/template-parts/nav-header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/search.php" afterPath="$PROJECT_DIR$/template-parts/search.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="24" column="153" lean-forward="false" selection-start-line="24" selection-start-column="153" selection-end-line="24" selection-end-column="153" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="archive.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/archive.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="49" column="98" lean-forward="false" selection-start-line="49" selection-start-column="98" selection-end-line="49" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-221">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="author.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/archive-types/author.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/archive-types/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/archive-types/date.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/archive-types/tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_theme.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devdmbootstrap4.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/devdmbootstrap4.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>comm</find>
+      <find>stick</find>
+      <find>card-block</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/template-parts</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/scss/bootstrap4x/_root.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/devdmbootstrap/devdmbootstrap4.scss" />
+        <option value="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.bundle.js" />
+        <option value="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.js" />
+        <option value="$PROJECT_DIR$/template-parts/search.php" />
+        <option value="$PROJECT_DIR$/template-parts/nav-footer.php" />
+        <option value="$PROJECT_DIR$/template-parts/nav-header.php" />
+        <option value="$PROJECT_DIR$/template-parts/comments.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss" />
+        <option value="$PROJECT_DIR$/single.php" />
+        <option value="$PROJECT_DIR$/archive.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Remote PHP 7">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="648" />
+    <option name="y" value="348" />
+    <option name="width" value="1262" />
+    <option name="height" value="691" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="devdmbootstrap4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devdmbootstrap4" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcccb50c-6bd2-4222-bc00-b24806410300" name="Default" comment="" />
+      <created>1507814098707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507814098707</updated>
+      <workItem from="1507814099803" duration="5607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5607000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="648" y="348" width="1920" height="1044" extended-state="6" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/bootstrap4x/_tables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/bootstrap4x/_root.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/devdmbootstrap4_enhanced_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/postmeta-footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/postmeta-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/nav-footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="93" lean-forward="false" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/nav-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="143" column="61" lean-forward="false" selection-start-line="143" selection-start-column="61" selection-end-line="143" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/devdmbootstrap4.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/archive-types/author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/archive-types/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/archive-types/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/archive-types/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="24" column="153" lean-forward="false" selection-start-line="24" selection-start-column="153" selection-end-line="24" selection-end-column="153" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="49" column="98" lean-forward="false" selection-start-line="49" selection-start-column="98" selection-end-line="49" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

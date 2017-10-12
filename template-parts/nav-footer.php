@@ -1,11 +1,16 @@
 <?php if ( has_nav_menu( 'footer_menu' ) ) : ?>
 
     <div class="container dropup dmbs-footer-nav-container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark dmbs-footer-navbar col-12">
 
-        <nav class="navbar navbar-dark bg-inverse dmbs-footer-navbar">
+                <!-- Toggle Button -->
+                <button class="navbar-toggler dmbs-footer-nav-mobile-toggle" type="button" data-toggle="collapse" data-target="#footer-nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> <?php _e('Menu','devdmbootstrap4'); ?>
+                </button>
 
                 <!-- Nav Content -->
-                <div class="navbar-toggleable-md" id="footer-nav-content">
+                <div class="collapse navbar-collapse" id="footer-nav-content">
                     <?php
 
                     //grab the Theme Mod Setting for Enabling the Enhanced Menu Walker
@@ -22,15 +27,15 @@
                             'depth'             => 2,
                             'container'         => '',
                             'container_class'   => '',
-                            'menu_class'        => 'dmbs-footer-nav nav navbar-nav',
+                            'menu_class'        => 'dmbs-footer-nav navbar-nav mr-auto',
                             'walker'            => $dmbswalker
                         )
                     );
                     ?>
                 </div>
 
-        </nav>
-
+            </nav>
+        </div>
     </div>
 
 <?php endif; ?>

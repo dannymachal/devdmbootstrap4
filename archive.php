@@ -47,11 +47,11 @@
 
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <div class="dmbs-post-featured-image">
-                                    <?php the_post_thumbnail(); ?>
+                                    <?php the_post_thumbnail('featured', ['class' => 'card-img-top']); ?>
                                 </div>
                             <?php endif; ?>
 
-                            <div class="card-block dmbs-post-content">
+                            <div class="card-body dmbs-post-content">
 
                                 <?php if ( has_excerpt() ) : ?>
                                     <div class="dmbs-post-summary">
