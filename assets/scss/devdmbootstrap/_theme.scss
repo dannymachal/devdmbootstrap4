@@ -123,6 +123,34 @@
       overflow-wrap: break-word;
       word-wrap: break-word;
       word-break: break-word;
+
+      .comment {
+        margin: $commentGutters 0;
+
+        .dmbs-comment-author {
+          display: flex;
+          align-items: baseline;
+          h4 {
+            padding-left: $commentGutters;
+          }
+        }
+
+        .comment-metadata {
+          margin-top: $commentGutters;
+        }
+
+      }
+
+      .comment-content {
+        margin: $commentGutters;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        iframe {
+          max-width: 100%;
+        }
+      }
       
       h4 {
         &#comments {
@@ -132,10 +160,6 @@
 
       .media-left {
         margin-right: $commentGutters;
-      }
-
-      .comment-content {
-        margin-top: $commentGutters;
       }
 
       ul.list-inline {
@@ -196,6 +220,8 @@
 }
 
 .dmbs-footer-nav-container {
+
+  margin-top: 16px;
 
   .dmbs-footer-navbar {
     overflow: hidden;

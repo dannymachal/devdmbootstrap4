@@ -27,6 +27,9 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
         // Add Theme Support for Custom Background Images and Colors
         add_theme_support( 'custom-background' );
 
+        // Add Theme Support for Customize Selective Refresh Widgets
+        add_theme_support( 'customize-selective-refresh-widgets' );
+
         // Add Editor stylesheet.
         add_editor_style(get_template_directory_uri() . '/assets/css/devdmbootstrap/editor-style.css');
 
@@ -123,7 +126,7 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
     {
         $wpTheme = wp_get_theme();
 
-        // Loading a new core version of jQuery for Bootstrap4
+        // Loading a new core version of jQuery for Bootstrap 4
         wp_deregister_script( 'jquery-core' );
         wp_register_script( 'jquery-core', "https://code.jquery.com/jquery-3.1.1.min.js", array(), '3.1.1' );
         wp_deregister_script( 'jquery-migrate' );

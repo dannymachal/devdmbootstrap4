@@ -20,7 +20,7 @@
                         <article id="post-<?php the_ID(); ?>" <?php post_class('dmbs-page'); ?>>
 
                             <header class="dmbs-page-header">
-                                <h2 class="dmbs-page-title"><?php the_title(); ?></h2>
+                                <h1 class="dmbs-page-title"><?php the_title(); ?></h1>
                             </header>
 
                             <div class="dmbs-page-content">

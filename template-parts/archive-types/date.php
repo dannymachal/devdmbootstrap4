@@ -1,4 +1,4 @@
-<h2 class="dmbs-category-archive-date">
+<h1 class="dmbs-category-archive-date">
     <?php
         if ( is_day() ) :
             printf( __( 'Daily Archives %s', 'devdmbootstrap4' ), get_the_date() );
@@ -14,4 +14,4 @@
 
         endif;
     ?>
-</h2>
+</h1>

@@ -11,7 +11,7 @@
     <div class="col-sm-6 dmbs-author-page-meta">
 
         <?php if ($displayname = get_the_author_meta('display_name',$curauth->ID)) : ?>
-            <h2 class="dmbs-author-display-name"><?php echo $displayname; ?></h2>
+            <h1 class="dmbs-author-display-name"><?php echo $displayname; ?></h1>
         <?php endif; ?>
 
         <?php if ($authorurl = get_the_author_meta('user_url',$curauth->ID)) : ?>
