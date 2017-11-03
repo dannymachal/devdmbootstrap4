@@ -67,6 +67,10 @@
 
   .dmbs-main {
 
+    .dmbs-category-archive-title, .dmbs-category-archive-tag, .dmbs-category-archive-date {
+      margin-bottom: 2rem;
+    }
+
     .dmbs-post {
 
       &.card {

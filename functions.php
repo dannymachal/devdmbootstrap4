@@ -99,8 +99,8 @@ if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
             'description' => __('Widgets in this area will be shown on all posts and pages.', 'devdmbootstrap4'),
             'before_widget' => '<li id="%1$s" class="widget dmbs-widget dmbs-widget-right %2$s">',
             'after_widget' => '</li>',
-            'before_title' => '<h2 class="widgettitle dmbs-widget-title dmbs-widget-right-title">',
-            'after_title' => '</h2>',
+            'before_title' => '<h3 class="widgettitle dmbs-widget-title dmbs-widget-right-title">',
+            'after_title' => '</h3>',
         ));
 
         register_sidebar(array(
@@ -109,8 +109,8 @@ if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
             'description' => __('Widgets in this area will be shown on all posts and pages.', 'devdmbootstrap4'),
             'before_widget' => '<li id="%1$s" class="widget dmbs-widget dmbs-widget-left %2$s">',
             'after_widget' => '</li>',
-            'before_title' => '<h2 class="widgettitle dmbs-widget-title dmbs-widget-left-title">',
-            'after_title' => '</h2>',
+            'before_title' => '<h3 class="widgettitle dmbs-widget-title dmbs-widget-left-title">',
+            'after_title' => '</h3>',
         ));
     }
 
@@ -139,11 +139,8 @@ if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
         // Enqueue the default style.css with the name devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
 
-        // Grab the Theme Mod Setting for Font Awesome.
-        $loadFontAwesome = get_theme_mod('devdmbootstrap4_fontawesome_setting',1);
-
-        if ($loadFontAwesome == 1) {
-            // Enqueue Font Awesome Icon Set with the name devdmbootstrap4-fontawesome.
+        // Enqueue Font Awesome Icon Set with the name devdmbootstrap4-fontawesome.
+        if (get_theme_mod('devdmbootstrap4_fontawesome_setting', 1)) {
             wp_enqueue_style('devdmbootstrap4-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
         }
 

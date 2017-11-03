@@ -11,17 +11,18 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'title' => __( 'DevDmBootstrap4 Options', 'devdmbootstrap4' ),
                     'priority' => 35,
                     'capability' => 'edit_theme_options',
-                    'description' => __('Customize DevDmBootstrap4 Specific Theme Options.', 'devdmbootstrap4' ),
+                    'description' => __('Customize DevDmBootstrap4 Specific Theme Options.', 'devdmbootstrap4' )
                 )
             );
 
-            //Show the Header
+            // Show the Header
             $wp_customize->add_setting( 'devdmbootstrap4_show_header_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
-                    'transport' => 'refresh'
+                    'transport' => 'refresh',
+                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
                 )
             );
 
@@ -34,19 +35,20 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 )
             );
 
-            //Right Side Bar Sizes
+            // Right Side Bar Size
             $wp_customize->add_setting( 'devdmbootstrap4_rightsidebar_setting',
                 array(
                     'default' => 3,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
+                    'sanitize_callback' => array('devdmbootstrap_sanitize_select' )
                 )
             );
 
             $wp_customize->add_control( 'devdmbootstrap4_rightsidebar',
                 array(
-                    'label'    => __( 'Right Sidebar Size', 'devdmbootstrap4' ),
+                    'label'    => __( 'Right Sidebar Size', 'devdmbootstrap4'),
                     'section'  => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_rightsidebar_setting',
                     'type'     => 'select',
@@ -61,13 +63,14 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 )
             );
 
-            //Left Side Bar Sizes
+            // Left Side Bar Size
             $wp_customize->add_setting( 'devdmbootstrap4_leftsidebar_setting',
                 array(
                     'default' => 0,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
+                    'sanitize_callback' => array('devdmbootstrap_sanitize_select' )
                 )
             );
 
@@ -88,13 +91,14 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 )
             );
 
-            //Use Font Awesome
+            // Use Font Awesome?
             $wp_customize->add_setting( 'devdmbootstrap4_fontawesome_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
-                    'transport' => 'refresh'
+                    'transport' => 'refresh',
+                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
                 )
             );
 
@@ -107,13 +111,14 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 )
             );
 
-            //Enable Enhanced Menu
+            // Enable Enhanced Menu?
             $wp_customize->add_setting( 'devdmbootstrap4_enhanced_menu_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
-                    'transport' => 'refresh'
+                    'transport' => 'refresh',
+                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
                 )
             );
 
@@ -126,7 +131,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 )
             );
 
-            //Give Danny his Credit
+            // Give Danny his Credit?
             $wp_customize->add_setting( 'devdmbootstrap4_show_credit_setting',
                 array(
                     'default' => 1,
@@ -152,12 +157,18 @@ if (!class_exists('devdmbootstrap_Customize')) {
         }
 
         public function devdmbootstrap_sanitize_checkbox($value) {
+            return ($value == 1 ? $value : '');
+        }
 
-            if ($value == 1) {
-                return $value;
-            }
+        function devdmbootstrap_sanitize_select( $input, $setting ) {
+            global $wp_customize;
 
-            return '';
+            $input = sanitize_key($input);
+            $choices = $wp_customize->get_control( $setting->id );
+
+            //return input if valid or return default option
+            return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+
         }
 
     }

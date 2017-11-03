@@ -7,7 +7,7 @@ Description: A no frills theme for Developers using Twitter Bootstrap 4 Alpha.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, fluid-layout, fixed-layout, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, translation-ready
+Tags: one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, translation-ready
 Text Domain: devdmbootstrap4
 GitHub Theme URI: https://github.com/dannymachal/devdmbootstrap4
 
@@ -16,10 +16,3 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 The default Bootstrap 4 CSS and JS files are enqueued inside the functions.php file with the handle devdmbootstrap4css / devdmbootstrap4js
 */
-
-
-.sticky {}
-
-.gallery-caption {}
-
-.bypostauthor {}
