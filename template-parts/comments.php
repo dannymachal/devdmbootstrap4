@@ -16,15 +16,12 @@
                         <ul class="list-unstyled">
 
                             <?php
-                            // Register Custom Comment Walker
-                            require_once(__DIR__ . '/../includes/class-wp-bootstrap-comment-walker.php');
-
-                            wp_list_comments( array(
-                                'style'         => 'ul',
-                                'short_ping'    => true,
-                                'avatar_size'   => '64',
-                                'walker'        => new Bootstrap_Comment_Walker(),
-                            ) );
+                                wp_list_comments( array(
+                                    'style'         => 'ul',
+                                    'short_ping'    => true,
+                                    'avatar_size'   => '64',
+                                    'walker'        => new Bootstrap_Comment_Walker(),
+                                ) );
                             ?>
 
                             <?php paginate_comments_links(); ?>

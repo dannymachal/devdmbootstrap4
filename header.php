@@ -8,4 +8,3 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('dmbs-body'); ?>>
-<?php print_R(get_theme_mods()); ?>

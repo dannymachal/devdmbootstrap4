@@ -16,3 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 The default Bootstrap 4 CSS and JS files are enqueued inside the functions.php file with the handle devdmbootstrap4css / devdmbootstrap4js
 */
+
+.gallery-caption {}
+
+.bypostauthor {}

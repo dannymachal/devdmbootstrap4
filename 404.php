@@ -9,7 +9,7 @@
 
             <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>
 
-            <div class="col-sm-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
+            <div class="col-md-12 col-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class('dmbs-page'); ?>>
 

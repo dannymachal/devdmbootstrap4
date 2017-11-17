@@ -45,18 +45,6 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 								<?php comment_time() ?>
 							</time>
 						</a>
-						<ul class="list-inline dmbs-comment-links">
-							<?php edit_comment_link( __( 'Edit' ), '<li class="edit-link list-inline-item dmbs-comment-edit-link">', '</li>' ); ?>
-							<?php
-								comment_reply_link( array_merge( $args, array(
-									'add_below' => 'div-comment',
-									'depth'     => $depth,
-									'max_depth' => $args['max_depth'],
-									'before'    => '<li class="reply-link list-inline-item dmbs-comment-reply-link">',
-									'after'     => '</li>'
-								) ) );
-							?>
-						</ul>
 					</div><!-- .comment-metadata -->
 				</div>
 				<div class="card-block warning-color">
@@ -68,9 +56,28 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 						<?php comment_text(); ?>
 					</div><!-- .comment-content -->
 
-				<!-- </div> -->
+				</div>
+                <div class="card-footer dmbs-comment-footer">
+                    <ul class="list-inline dmbs-comment-links">
+                        <?php edit_comment_link( __( 'Edit','devdmbootstrap4' ), '<li class="edit-link list-inline-item dmbs-comment-edit-link">', '</li>' ); ?>
+                        <?php
+                        comment_reply_link( array_merge( $args, array(
+                            'add_below' => 'div-comment',
+                            'depth'     => $depth,
+                            'max_depth' => $args['max_depth'],
+                            'before'    => '<li class="reply-link list-inline-item dmbs-comment-reply-link">',
+                            'after'     => '</li>'
+                        ) ) );
+                        ?>
+                    </ul>
+                </div>
 
-			<!-- </div>		 -->
+        <!--
+            <?php if (!$this->has_children) : ?>
+                </div>
+			</div>
+            <?php endif; ?>
+            -->
 <?php
 	}
 }

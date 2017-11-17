@@ -5,7 +5,7 @@
     if ($leftSidebarSize != 0) :
 ?>
 
-        <div class="col-sm-<?php echo $leftSidebarSize; ?> dmbs-left">
+        <div class="col-md-<?php echo $leftSidebarSize; ?> dmbs-left">
             <?php dynamic_sidebar( 'dmbs-left-sidebar' ); ?>
         </div>
 

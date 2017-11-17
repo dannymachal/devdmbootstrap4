@@ -37,7 +37,7 @@ add_filter( 'comment_form_default_fields', 'devdmbootstrap4__comment_form_fields
 function devdmbootstrap4_comment_form( $args ) {
 
     global $current_user;
-    get_currentuserinfo();
+    wp_get_current_user();
 
     $args['comment_field'] = '
         <div class="form-group comment-form-comment">

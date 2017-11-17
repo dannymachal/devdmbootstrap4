@@ -172,8 +172,8 @@ function devdmbootstrap_column_size($column = null) {
     if ($column != null && array_key_exists($column,$columnSizes)) {
 
         $columnSizes = array(
-            'left' => get_theme_mod('devdmbootstrap4_leftsidebar_setting',0),
-            'right' => get_theme_mod('devdmbootstrap4_rightsidebar_setting',3),
+            'left' => get_theme_mod('devdmbootstrap4_leftsidebar',0),
+            'right' => get_theme_mod('devdmbootstrap4_rightsidebar',3),
         );
 
         $columnSizes['main'] = 12 - ($columnSizes['right'] + $columnSizes['left']);
@@ -206,7 +206,10 @@ if ($loadEnhancedMenu == 1) {
 
     require get_template_directory() . '/includes/devdmbootstrap_enhanced_nav_walker.php';
 }
-
+/**
+ * Custom Comment Walker
+ */
+require_once(__DIR__ . '/includes/class-wp-bootstrap-comment-walker.php');
 
 /**
  * Utilities

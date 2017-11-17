@@ -1,6 +1,11 @@
 <?php
-
+/**
+ * devdmbootstrap_Customize
+ * Our main class for working with the WordPress Customizer
+ */
 if (!class_exists('devdmbootstrap_Customize')) {
+
+    add_action( 'customize_register' , array( 'devdmbootstrap_Customize' , 'register' ) );
 
     class devdmbootstrap_Customize {
 
@@ -36,13 +41,13 @@ if (!class_exists('devdmbootstrap_Customize')) {
             );
 
             // Right Side Bar Size
-            $wp_customize->add_setting( 'devdmbootstrap4_rightsidebar_setting',
+            $wp_customize->add_setting( 'devdmbootstrap4_rightsidebar',
                 array(
                     'default' => 3,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array('devdmbootstrap_sanitize_select' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_select' )
                 )
             );
 
@@ -50,7 +55,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 array(
                     'label'    => __( 'Right Sidebar Size', 'devdmbootstrap4'),
                     'section'  => 'devdmbootstrap_options',
-                    'settings' => 'devdmbootstrap4_rightsidebar_setting',
+                    'settings' => 'devdmbootstrap4_rightsidebar',
                     'type'     => 'select',
                     'choices'  => array(
                         '0' => '0 - '. __('Hidden','devdmbootstrap4'),
@@ -64,13 +69,13 @@ if (!class_exists('devdmbootstrap_Customize')) {
             );
 
             // Left Side Bar Size
-            $wp_customize->add_setting( 'devdmbootstrap4_leftsidebar_setting',
+            $wp_customize->add_setting( 'devdmbootstrap4_leftsidebar',
                 array(
                     'default' => 0,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array('devdmbootstrap_sanitize_select' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_select')
                 )
             );
 
@@ -78,7 +83,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                 array(
                     'label'    => __( 'Left Sidebar Size', 'devdmbootstrap4' ),
                     'section'  => 'devdmbootstrap_options',
-                    'settings' => 'devdmbootstrap4_leftsidebar_setting',
+                    'settings' => 'devdmbootstrap4_leftsidebar',
                     'type'     => 'select',
                     'choices'  => array(
                         '0' => '0 - '. __('Hidden','devdmbootstrap4'),
@@ -160,20 +165,31 @@ if (!class_exists('devdmbootstrap_Customize')) {
             return ($value == 1 ? $value : '');
         }
 
-        function devdmbootstrap_sanitize_select( $input, $setting ) {
-            global $wp_customize;
-
+        public function devdmbootstrap_sanitize_select( $input, $setting ) {
             $input = sanitize_key($input);
-            $choices = $wp_customize->get_control( $setting->id );
+            $control = $setting->manager->get_control($setting->id);
+            $choices = $control->choices;
 
-            //return input if valid or return default option
             return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
-
         }
 
     }
 
-    add_action( 'customize_register' , array( 'devdmbootstrap_Customize' , 'register' ) );
+    /**
+     * devdmbootstrap_customizer_js
+     * Hook in our Live Preview jQuery file for customizer controls
+     */
+    add_action( 'customize_preview_init', 'devdmbootstrap_customizer_js' );
+    function devdmbootstrap_customizer_js() {
+        wp_enqueue_script(
+            'devdmbootstrap_customizer_js',
+            get_template_directory_uri() . '/assets/js/customizer.js',
+            array( 'jquery','customize-preview' ),
+            '',
+            true
+        );
+    }
 
 }
+
 

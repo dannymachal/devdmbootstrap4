@@ -4,7 +4,7 @@
 
 <div class="row dmbs-author-page-header">
 
-    <div class="col-sm-6 dmbs-author-page-avatar">
+    <div class="col-sm-6 dmbs-author-page-avatar text-center">
         <?php echo get_avatar( $curauth->ID, 250, '', '', array('class' => 'img-circle') ); ?>
     </div>
 

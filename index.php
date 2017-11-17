@@ -9,7 +9,7 @@
 
         <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>
 
-        <div class="col-sm-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
+        <div class="col-md-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
 
             <?php get_template_part( 'template-parts/search' ); ?>
 
