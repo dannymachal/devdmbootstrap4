@@ -2,28 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcccb50c-6bd2-4222-bc00-b24806410300" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/customizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4d5cf98b5da38fb0af88c2a0e3fb0b47959eefc6/_theme.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4d5cf98b5da38fb0af88c2a0e3fb0b47959eefc6/_theme.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive.php" afterPath="$PROJECT_DIR$/archive.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css" afterPath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css.map" afterPath="$PROJECT_DIR$/assets/css/devdmbootstrap/devdmbootstrap4.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss" afterPath="$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/js/bootstrap4x/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_alert.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_alert.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_button-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_button-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_buttons.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_card.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_card.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_carousel.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_carousel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_close.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_close.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_code.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_code.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_custom-forms.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_custom-forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_dropdown.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_dropdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_functions.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_functions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_images.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_images.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_input-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_input-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_list-group.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_modal.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_nav.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_navbar.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_pagination.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_popover.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_popover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_progress.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_progress.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_reboot.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_reboot.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_root.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_root.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_tooltip.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_tooltip.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_type.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_type.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/_variables.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap-grid.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap-grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap-reboot.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap-reboot.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/bootstrap.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_alert.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_alert.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_background-variant.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_badge.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_badge.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_breakpoints.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_breakpoints.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_caret.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_caret.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_gradients.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_screen-reader.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_screen-reader.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_text-hide.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/mixins/_text-hide.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_background.scss" afterPath="$PROJECT_DIR$/assets/scss/bootstrap4x/utilities/_background.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-wp-bootstrap-comment-walker.php" afterPath="$PROJECT_DIR$/includes/class-wp-bootstrap-comment-walker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/customizer.php" afterPath="$PROJECT_DIR$/includes/customizer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/utilities.php" afterPath="$PROJECT_DIR$/includes/utilities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page.php" afterPath="$PROJECT_DIR$/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/archive-types/author.php" afterPath="$PROJECT_DIR$/template-parts/archive-types/author.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/comments.php" afterPath="$PROJECT_DIR$/template-parts/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/sidebar-left.php" afterPath="$PROJECT_DIR$/template-parts/sidebar-left.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/sidebar-right.php" afterPath="$PROJECT_DIR$/template-parts/sidebar-right.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,106 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customizer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/customizer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="35" column="67" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_theme.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_wordpresscore.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_wordpresscore.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="82" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-wp-bootstrap-comment-walker.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/class-wp-bootstrap-comment-walker.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="79" column="15" lean-forward="false" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
-              <folding>
-                <marker date="1510932388401" expanded="true" signature="3278:3311" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-parts/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="author.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-parts/archive-types/author.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,6 +86,7 @@
       <find>.gallery-caption</find>
       <find>devdmboo</find>
       <find>author</find>
+      <find>__</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/template-parts</dir>
@@ -198,10 +126,10 @@
         <option value="$PROJECT_DIR$/includes/utilities.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/template-parts/comments.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss" />
         <option value="$PROJECT_DIR$/template-parts/archive-types/author.php" />
         <option value="$PROJECT_DIR$/includes/class-wp-bootstrap-comment-walker.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -305,25 +233,26 @@
       <workItem from="1510720900001" duration="4350000" />
       <workItem from="1510765925624" duration="1070000" />
       <workItem from="1510886779740" duration="4838000" />
+      <workItem from="1511969702527" duration="993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26782000" />
+    <option name="totallyTimeSpent" value="27775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="648" y="348" width="1920" height="1044" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26947704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27267876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25773746" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06345733" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -546,7 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,7 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,16 +567,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_wordpresscore.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="1360">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="82" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -666,7 +583,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/customizer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="595">
           <caret line="35" column="67" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="67" />
           <folding />
         </state>
@@ -693,24 +610,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/devdmbootstrap/_theme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="1275">
           <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -722,6 +631,22 @@
           <folding>
             <marker date="1510932388401" expanded="true" signature="3278:3311" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
