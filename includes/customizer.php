@@ -9,7 +9,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
 
     class devdmbootstrap_Customize {
 
-        public function register ( $wp_customize ) {
+        public static function register ( $wp_customize ) {
 
             $wp_customize->add_section( 'devdmbootstrap_options',
                 array(
@@ -109,7 +109,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
 
             $wp_customize->add_control( 'devdmbootstrap4_fontawesome',
                 array(
-                    'label'    => __( 'Load Font Awesome Icon Library (v4.4.0)?', 'devdmbootstrap4' ),
+                    'label'    => __( 'Load Font Awesome Free Icon Library (v5.0.2)?', 'devdmbootstrap4' ),
                     'section'  => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_fontawesome_setting',
                     'type'     => 'checkbox'
@@ -189,6 +189,11 @@ if (!class_exists('devdmbootstrap_Customize')) {
             true
         );
     }
+
+    /**
+     * devdmbootstrap_customizer_js
+     * Hook in our Live Preview jQuery file for customizer controls
+     */
 
 }
 

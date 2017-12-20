@@ -1,6 +1,9 @@
 <?php
 
-function devdmbootstrap4__comment_form_fields( $fields ) {
+/**
+ * devdmbootstrap4_comment_form_fields
+ */
+function devdmbootstrap4_comment_form_fields( $fields ) {
 
     $commenter = wp_get_current_commenter();
 
@@ -31,23 +34,24 @@ function devdmbootstrap4__comment_form_fields( $fields ) {
     return $fields;
 }
 
-add_filter( 'comment_form_default_fields', 'devdmbootstrap4__comment_form_fields' );
+add_filter( 'comment_form_default_fields', 'devdmbootstrap4_comment_form_fields' );
 
-
+/**
+ * devdmbootstrap4_comment_form
+ */
 function devdmbootstrap4_comment_form( $args ) {
-
     global $current_user;
     wp_get_current_user();
 
+    $args['cancel_reply_before'] = "<span class='float-right dmbs-comment-cancel-link'>";
+    $args['cancel_reply_after']  = "</span>";
     $args['comment_field'] = '
         <div class="form-group comment-form-comment">
             <label for="comment">' . _x( 'Comment', 'noun', 'devdmbootstrap4') . '</label>
             <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
         </div>
         ';
-
     $args['class_submit'] = 'btn btn-success btn-sm'; // since WP 4.1
-
     $args['logged_in_as'] = '<p class="logged-in-as">' .
     sprintf(
         __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" class="btn btn-sm btn-danger" title="Log out of this account"><span class="fa fa-sign-out"></span> Log out?</a>','devdmbootstrap4' ),
@@ -61,6 +65,9 @@ function devdmbootstrap4_comment_form( $args ) {
 
 add_filter( 'comment_form_defaults', 'devdmbootstrap4_comment_form' );
 
+/**
+ * devdmbootstrap4_credit_link
+ */
 function devdmbootstrap4_credit_link() {
     $link = "http://devdm.com";
     return $link;

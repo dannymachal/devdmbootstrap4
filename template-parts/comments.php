@@ -25,13 +25,12 @@
                             ?>
 
                             <?php paginate_comments_links(); ?>
-                            <?php wp_enqueue_script( "comment-reply" ); ?>
+                            <?php // wp_enqueue_script( "comment-reply" ); ?>
                         </ul>
 
                     <?php endif; ?>
 
                     <hr class="dmbs-comments-separator">
-
                     <?php comment_form(); ?>
                 </div>
             </div>

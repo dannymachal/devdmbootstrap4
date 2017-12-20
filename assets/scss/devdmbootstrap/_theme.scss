@@ -159,6 +159,12 @@
           max-width: 100%;
         }
       }
+
+      .dmbs-comment-cancel-link {
+        #cancel-comment-reply-link {
+          @extend .btn, .btn-sm, .btn-danger;
+        }
+      }
       
       h4 {
         &#comments {

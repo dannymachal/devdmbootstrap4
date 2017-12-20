@@ -25,10 +25,10 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 	protected function html5_comment( $comment, $depth, $args ) {
 		$tag = ( $args['style'] === 'div' ) ? 'div' : 'li';
 ?>
-		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'has-children media' : ' media' ); ?>>
+		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children === 1 ? 'has-children media' : ' media' ); ?>>
 
 
-			<div class="media-body card" id="div-comment-<?php comment_ID(); ?>">
+			<div class="card w-100" id="div-comment-<?php comment_ID(); ?>">
 				<div class="card-header">
 					<div class="dmbs-comment-author">
 						<?php if ( $args['avatar_size'] != 0  ): ?>
@@ -72,12 +72,10 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
                     </ul>
                 </div>
 
-        <!--
-            <?php if (!$this->has_children) : ?>
+            <?php if ($this->has_children === 1) : ?>
                 </div>
 			</div>
             <?php endif; ?>
-            -->
 <?php
 	}
 }

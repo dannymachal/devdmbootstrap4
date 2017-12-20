@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-08 12:58-0800\n"
+"PO-Revision-Date: 2017-12-08 12:59-0800\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/searchform.php:3
+msgid "Search for"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/searchform.php:4
+msgid "Search ..."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/archive.php:64
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/single.php:43
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:45
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/page.php:30
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:62
+msgid "Main Menu"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:63
+msgid "Footer Menu"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:98
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:100
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:111
+msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:109
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/404.php:17
+msgid "404 No Page Found"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:65
+msgid "Previous page"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:66
+msgid "Next page"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:67
+msgid "Page"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/footer.php:6
+msgid "DevDmBootstrap4 Created by Danny Machal (DevDm.com)"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/comments.php:13
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-header.php:11
+msgid "Comments"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/comments.php:13
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-header.php:11
+msgid "Comment"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/comments.php:13
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-header.php:11
+msgid " Comments"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/search.php:8
+#, php-format
+msgid "%s Search Results for \"%s\""
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/nav-footer.php:9
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/nav-header.php:10
+msgid "Menu"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-footer.php:4
+msgid "Posted in "
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/class-wp-bootstrap-comment-walker.php:52
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/class-wp-bootstrap-comment-walker.php:62
+msgid "Edit"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:18
+msgid "Name"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:22
+msgid "Email"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:29
+msgid "Website"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:50
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:57
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" class=\"btn btn-sm "
+"btn-danger\" title=\"Log out of this account\"><span class=\"fa fa-sign-out"
+"\"></span> Log out?</a>"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:16
+msgid "DevDmBootstrap4 Options"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:19
+msgid "Customize DevDmBootstrap4 Specific Theme Options."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:36
+msgid "Show the Header?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:56
+msgid "Right Sidebar Size"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:61
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:89
+msgid "Hidden"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:84
+msgid "Left Sidebar Size"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:112
+msgid "Load Font Awesome Icon Library (v4.4.0)?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:132
+msgid "Use the Enhanced menu system?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:152
+msgid "Show Danny some love in the footer?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/tag.php:1
+#, php-format
+msgid "Currently Viewing Posts Tagged %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:4
+#, php-format
+msgid "Daily Archives %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:7
+#, php-format
+msgid "Monthly Archives %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:7
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:10
+#, php-format
+msgid "Yearly Archives %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:10
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:13
+msgid "Archives"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/category.php:1
+#, php-format
+msgid "Currently Viewing Posts in %s"
+msgstr ""
+
+#. Name of the theme
+msgid "devdmbootstrap4"
+msgstr ""
+
+#. Description of the theme
+msgid "A no frills theme for Developers using Twitter Bootstrap 4 Alpha."
+msgstr ""
+
+#. URI of the theme
+msgid "http://devdm.com/devdmbootstrap4"
+msgstr ""
+
+#. Author of the theme
+msgid "Danny Machal"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://devdm.com/"
+msgstr ""
