@@ -72,3 +72,17 @@ function devdmbootstrap4_credit_link() {
     $link = "http://devdm.com";
     return $link;
 }
+
+/**
+ * devdmbootstrap4_header_background
+ */
+function devdmbootstrap4_header_background() {
+    $headerImage = get_header_image();
+    $showHeader  = get_theme_mod('devdmbootstrap4_show_header_setting', 1);
+    if ($showHeader && !empty($headerImage)) {
+        echo "<style>" . PHP_EOL;
+        echo ".dmbs-header { background-image: url(". $headerImage ."); }" . PHP_EOL;
+        echo "</style>". PHP_EOL;
+    }
+}
+add_action('wp_head','devdmbootstrap4_header_background');

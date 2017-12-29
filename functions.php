@@ -8,7 +8,7 @@
  * Setup the theme defaults.
  */
 
-if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
+if (!function_exists( 'devdmbootstrap_setup' ) ) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      */
@@ -33,11 +33,11 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
         // Add Editor stylesheet.
         add_editor_style(get_template_directory_uri() . '/assets/css/devdmbootstrap/editor-style.css');
 
-        // Add Theme Support for Custom Header (logo) image
+        // Add Theme Support for Custom Header (background) image
         add_theme_support( 'custom-header', array(
-            'default-image'          => 'http://placehold.it/350x150',
+            'default-image'          => '',
             'random-default'         => false,
-            'width'                  => 350,
+            'width'                  => 1140,
             'height'                 => 150,
             'flex-height'            => true,
             'flex-width'             => true,
@@ -75,18 +75,20 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
             'caption',
         ));
 
-        add_theme_support( 'custom-logo', array(
-            'height'      => 100,
-            'width'       => 400,
-            'flex-height' => true,
-            'flex-width'  => true,
-            'header-text' => array( 'site-title', 'site-description' ),
-        ) );
-
         // Set the max content width
         if ( ! isset( $content_width ) ) {
             $content_width = 1140;
         }
+
+        /* Add custom-logo theme support */
+        add_theme_support( 'custom-logo', array(
+            'height'      => 150,
+            'width'       => 350,
+            'flex-height' => true,
+            'flex-width'  => true,
+            'header-text' => array( 'site-title', 'site-description' ),
+            )
+        );
 
     }
 
@@ -94,9 +96,23 @@ if ( ! function_exists( 'devdmbootstrap_setup' ) ) {
 add_action( 'after_setup_theme', 'devdmbootstrap_setup' );
 
 /**
+ * get the custom logo URL
+ */
+if (!function_exists('devdmbootstrap4_custom_logo')) {
+    function devdmbootstrap4_custom_logo() {
+
+        if ( function_exists( 'the_custom_logo' ) ) {
+            $custom_logo_id = get_theme_mod( 'custom_logo' );
+            $image          = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+            return (!empty($image[0]) ? $image[0] : FALSE);
+        }
+    }
+}
+
+/**
  * Register left and right Sidebar
  */
-if ( ! function_exists( 'devdmbootstrap_widgets_init' ) ) {
+if (!function_exists( 'devdmbootstrap_widgets_init' ) ) {
 
     function devdmbootstrap_widgets_init()
     {
@@ -130,7 +146,7 @@ add_action( 'widgets_init', 'devdmbootstrap_widgets_init' );
 /**
  * Include the Bootstrap 4.x Stylesheet and JS
  */
-if ( ! function_exists( 'devdmbootstrap_scripts' ) ) {
+if (!function_exists( 'devdmbootstrap_scripts' ) ) {
 
     function devdmbootstrap_scripts()
     {
@@ -164,51 +180,55 @@ require get_template_directory() . '/includes/customizer.php';
 /**
  * Calculate Column Sizes and return the value when called
  */
-function devdmbootstrap_column_size($column = null) {
-
-    $columnSizes = array(
-        'left'  => '',
-        'right' => '',
-        'main'  => '',
-    );
-
-    if ($column != null && array_key_exists($column,$columnSizes)) {
+if (!function_exists( 'devdmbootstrap_column_size' ) ) {
+    function devdmbootstrap_column_size($column = null) {
 
         $columnSizes = array(
-            'left' => get_theme_mod('devdmbootstrap4_leftsidebar',0),
-            'right' => get_theme_mod('devdmbootstrap4_rightsidebar',3),
+            'left'  => '',
+            'right' => '',
+            'main'  => '',
         );
 
-        $columnSizes['main'] = 12 - ($columnSizes['right'] + $columnSizes['left']);
+        if ($column != null && array_key_exists($column,$columnSizes)) {
 
-        return $columnSizes[$column];
+            $columnSizes = array(
+                'left' => get_theme_mod('devdmbootstrap4_leftsidebar',0),
+                'right' => get_theme_mod('devdmbootstrap4_rightsidebar',3),
+            );
 
+            $columnSizes['main'] = 12 - ($columnSizes['right'] + $columnSizes['left']);
+
+            return $columnSizes[$column];
+
+        }
+
+        return;
     }
-
-    return;
 }
 
 /**
  * Nav Walker
  */
-require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';
+if (!function_exists( 'devdmbootstrap_nav_walker' ) ) {
+    function devdmbootstrap_nav_walker()
+    {
+        $loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
 
-// Grab the Theme Mod Setting for Enabling the Enhanced Menu Walker.
-$loadEnhancedMenu = get_theme_mod('devdmbootstrap4_enhanced_menu_setting', 1);
+        if ($loadEnhancedMenu == 1) {
+            $wpTheme = wp_get_theme();
 
-if ($loadEnhancedMenu == 1) {
+            // Enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
+            wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $wpTheme->get('Version'), true);
 
-    function devdmbootstrap_fontawesome_enqueue() {
-        $wpTheme = wp_get_theme();
-
-        // Enqueue the Enhanced Menu System JS with the handle devdmbootstrap4-enhanced-menu-js
-        wp_enqueue_script('devdmbootstrap4-enhanced-nav-js', get_template_directory_uri() . '/assets/js/devdmbootstrap4_enhanced_nav.js', array('jquery'), $wpTheme->get( 'Version' ), true);
+            require get_template_directory() . '/includes/devdmbootstrap_enhanced_nav_walker.php';
+        } else {
+            wp_dequeue_script('devdmbootstrap4-enhanced-nav');
+            require get_template_directory() . '/includes/devdmbootstrap_nav_walker.php';
+        }
     }
-
-    add_action('wp_enqueue_scripts','devdmbootstrap_fontawesome_enqueue');
-
-    require get_template_directory() . '/includes/devdmbootstrap_enhanced_nav_walker.php';
 }
+add_action('wp_enqueue_scripts','devdmbootstrap_nav_walker');
+
 /**
  * Custom Comment Walker
  */

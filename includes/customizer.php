@@ -161,11 +161,11 @@ if (!class_exists('devdmbootstrap_Customize')) {
 
         }
 
-        public function devdmbootstrap_sanitize_checkbox($value) {
+        public static function devdmbootstrap_sanitize_checkbox($value) {
             return ($value == 1 ? $value : '');
         }
 
-        public function devdmbootstrap_sanitize_select( $input, $setting ) {
+        public static function devdmbootstrap_sanitize_select( $input, $setting ) {
             $input = sanitize_key($input);
             $control = $setting->manager->get_control($setting->id);
             $choices = $control->choices;
