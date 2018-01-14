@@ -6,13 +6,12 @@ if (!class_exists('devdmbootstrap_enhanced_nav_walker')) {
 
         public function start_lvl( &$output, $depth = 0, $args = array() ) {
             $indent = str_repeat("\t", $depth);
-            $output .= "\n$indent<div class=\"dropdown-menu\" aria-labelledby=\"Preview\">\n";
+            $output .= PHP_EOL . $indent . "<div class=\"dropdown-menu\" aria-labelledby=\"Preview\">" . PHP_EOL;
         }
 
         public function end_lvl( &$output, $depth = 0, $args = array() ) {
             $indent = str_repeat("\t", $depth);
-            $output .= "$indent</div>\n";
-
+            $output .= $indent . "</div>" . PHP_EOL;
         }
 
         public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
@@ -35,26 +34,27 @@ if (!class_exists('devdmbootstrap_enhanced_nav_walker')) {
                 $output .= $indent . '<li' . $id . $class_names .'>';
             }
 
-            $atts = array();
-            $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
-            $atts['target'] = ! empty( $item->target ) ? $item->target     : '';
-            $atts['rel']    = ! empty( $item->xfn )    ? $item->xfn        : '';
-            $atts['href']   = ! empty( $item->url )    ? $item->url        : '';
-            $atts['class'] = 'nav-link';
+            $atts                = array();
+            $atts['title']       = !empty($item->attr_title) ? $item->attr_title : '';
+            $atts['target']      = !empty($item->target) ? $item->target : '';
+            $atts['rel']         = !empty($item->xfn) ? $item->xfn : '';
+            $atts['href']        = !empty($item->url) ? $item->url : '';
+            $atts['description'] = !empty($item->description) ? wp_strip_all_tags($item->description) : '';
+            $atts['class']       = 'nav-link';
 
             /*
              * Set the Font Awesome Icon Integration
              */
             $faicon = '';
-            if (substr(trim($item->attr_title),0,2) == "fa") {
-                $faicon = '<i class="'. $item->attr_title .'"></i> ';
-                $atts['title'] = '';
+            if (substr(trim($item->description),0,2) == "fa") {
+                $faicon = '<i class="'. $item->description .'"></i> ';
+                unset($atts['description']);
             }
 
             if ($this->has_children) {
-                $atts['class'] = 'nav-link dropdown-toggle';
-                $atts['data-toggle'] = "dropdown";
-                $atts['role'] = "button";
+                $atts['class']         = 'nav-link dropdown-toggle';
+                $atts['data-toggle']   = "dropdown";
+                $atts['role']          = "button";
                 $atts['aria-haspopup'] = "true";
                 $atts['aria-expanded'] = "false";
             }
@@ -87,7 +87,7 @@ if (!class_exists('devdmbootstrap_enhanced_nav_walker')) {
 
         public function end_el( &$output, $item, $depth = 0, $args = array() ) {
             if (!$item->menu_item_parent) {
-                $output .= "</li>\n";
+                $output .= "</li>" . PHP_EOL;
             }
         }
 
