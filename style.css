@@ -1,9 +1,9 @@
 /*
 Theme Name: devdmbootstrap4
-Theme URI: http://devdm.com/devdmbootstrap4
+Theme URI: https://devdmbootstrap.com
 Author: Danny Machal
-Author URI: http://devdm.com/
-Description: A no frills theme for Developers using Twitter Bootstrap 4 Alpha.
+Author URI: https://devdm.com/
+Description: A no frills theme for Developers using Twitter Bootstrap 4.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ GitHub Theme URI: https://github.com/dannymachal/devdmbootstrap4
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-The default Bootstrap 4 CSS and JS files are enqueued inside the functions.php file with the handle devdmbootstrap4css / devdmbootstrap4js
+The default Bootstrap 4 CSS and JS files are enqueued inside the functions.php file with the handles devdmbootstrap4-css and devdmbootstrap4-js
 */
 
 .gallery-caption {}

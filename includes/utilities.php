@@ -33,7 +33,6 @@ function devdmbootstrap4_comment_form_fields( $fields ) {
 
     return $fields;
 }
-
 add_filter( 'comment_form_default_fields', 'devdmbootstrap4_comment_form_fields' );
 
 /**
