@@ -1,3 +1,6 @@
+[![alt text](https://devdmbootstrap.com/wp-content/uploads/DevDmBootstrap4-final-1.png "https://devdmbootstrap.com")](https://devdmbootstrap.com)
+
+
 ## DevDmBootstrap4
 
 This is a starter WordPress theme for DEVELOPERS using Twitter Bootstrap 4.x
