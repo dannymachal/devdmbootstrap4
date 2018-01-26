@@ -5,60 +5,62 @@
  */
 if (!class_exists('devdmbootstrap_Customize')) {
 
-    add_action( 'customize_register' , array( 'devdmbootstrap_Customize' , 'register' ) );
+    add_action('customize_register', array('devdmbootstrap_Customize', 'register'));
 
-    class devdmbootstrap_Customize {
+    class devdmbootstrap_Customize
+    {
 
-        public static function register ( $wp_customize ) {
+        public static function register($wp_customize)
+        {
 
-            $wp_customize->add_section( 'devdmbootstrap_options',
+            $wp_customize->add_section('devdmbootstrap_options',
                 array(
-                    'title' => __( 'DevDmBootstrap4 Options', 'devdmbootstrap4' ),
+                    'title' => __('DevDmBootstrap4 Options', 'devdmbootstrap4'),
                     'priority' => 35,
                     'capability' => 'edit_theme_options',
-                    'description' => __('Customize DevDmBootstrap4 Specific Theme Options.', 'devdmbootstrap4' )
+                    'description' => __('Customize DevDmBootstrap4 Specific Theme Options.', 'devdmbootstrap4')
                 )
             );
 
             // Show the Header
-            $wp_customize->add_setting( 'devdmbootstrap4_show_header_setting',
+            $wp_customize->add_setting('devdmbootstrap4_show_header_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize', 'devdmbootstrap_sanitize_checkbox')
                 )
             );
 
-            $wp_customize->add_control( 'devdmbootstrap4_show_header',
+            $wp_customize->add_control('devdmbootstrap4_show_header',
                 array(
-                    'label'    => __( 'Show the Header?', 'devdmbootstrap4' ),
-                    'section'  => 'devdmbootstrap_options',
+                    'label' => __('Show the Header?', 'devdmbootstrap4'),
+                    'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_show_header_setting',
-                    'type'     => 'checkbox'
+                    'type' => 'checkbox'
                 )
             );
 
             // Right Side Bar Size
-            $wp_customize->add_setting( 'devdmbootstrap4_rightsidebar',
+            $wp_customize->add_setting('devdmbootstrap4_rightsidebar',
                 array(
                     'default' => 3,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array('devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_select' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize', 'devdmbootstrap_sanitize_select')
                 )
             );
 
-            $wp_customize->add_control( 'devdmbootstrap4_rightsidebar',
+            $wp_customize->add_control('devdmbootstrap4_rightsidebar',
                 array(
-                    'label'    => __( 'Right Sidebar Size', 'devdmbootstrap4'),
-                    'section'  => 'devdmbootstrap_options',
+                    'label' => __('Right Sidebar Size', 'devdmbootstrap4'),
+                    'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_rightsidebar',
-                    'type'     => 'select',
-                    'choices'  => array(
-                        '0' => '0 - '. __('Hidden','devdmbootstrap4'),
+                    'type' => 'select',
+                    'choices' => array(
+                        '0' => '0 - ' . __('Hidden', 'devdmbootstrap4'),
                         '1' => '1',
                         '2' => '2',
                         '3' => '3',
@@ -69,24 +71,24 @@ if (!class_exists('devdmbootstrap_Customize')) {
             );
 
             // Left Side Bar Size
-            $wp_customize->add_setting( 'devdmbootstrap4_leftsidebar',
+            $wp_customize->add_setting('devdmbootstrap4_leftsidebar',
                 array(
                     'default' => 0,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array('devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_select')
+                    'sanitize_callback' => array('devdmbootstrap_Customize', 'devdmbootstrap_sanitize_select')
                 )
             );
 
-            $wp_customize->add_control( 'devdmbootstrap4_leftsidebar',
+            $wp_customize->add_control('devdmbootstrap4_leftsidebar',
                 array(
-                    'label'    => __( 'Left Sidebar Size', 'devdmbootstrap4' ),
-                    'section'  => 'devdmbootstrap_options',
+                    'label' => __('Left Sidebar Size', 'devdmbootstrap4'),
+                    'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_leftsidebar',
-                    'type'     => 'select',
-                    'choices'  => array(
-                        '0' => '0 - '. __('Hidden','devdmbootstrap4'),
+                    'type' => 'select',
+                    'choices' => array(
+                        '0' => '0 - ' . __('Hidden', 'devdmbootstrap4'),
                         '1' => '1',
                         '2' => '2',
                         '3' => '3',
@@ -97,89 +99,94 @@ if (!class_exists('devdmbootstrap_Customize')) {
             );
 
             // Use Font Awesome?
-            $wp_customize->add_setting( 'devdmbootstrap4_fontawesome_setting',
+            $wp_customize->add_setting('devdmbootstrap4_fontawesome_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize', 'devdmbootstrap_sanitize_checkbox')
                 )
             );
 
-            $wp_customize->add_control( 'devdmbootstrap4_fontawesome',
+            $wp_customize->add_control('devdmbootstrap4_fontawesome',
                 array(
-                    'label'    => __( 'Load Font Awesome Free Icon Library (v5.0.2)?', 'devdmbootstrap4' ),
-                    'section'  => 'devdmbootstrap_options',
+                    'label' => __('Load Font Awesome Free Icon Library (v5.0.2)?', 'devdmbootstrap4'),
+                    'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_fontawesome_setting',
-                    'type'     => 'checkbox'
+                    'type' => 'checkbox'
                 )
             );
 
             // Enable Enhanced Menu?
-            $wp_customize->add_setting( 'devdmbootstrap4_enhanced_menu_setting',
+            $wp_customize->add_setting('devdmbootstrap4_enhanced_menu_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize', 'devdmbootstrap_sanitize_checkbox')
                 )
             );
 
-            $wp_customize->add_control( 'devdmbootstrap4_enhanced_menu',
+            $wp_customize->add_control('devdmbootstrap4_enhanced_menu',
                 array(
-                    'label'    => __( 'Use the Enhanced menu system?', 'devdmbootstrap4' ),
-                    'section'  => 'devdmbootstrap_options',
+                    'label' => __('Use the Enhanced menu system?', 'devdmbootstrap4'),
+                    'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_enhanced_menu_setting',
-                    'type'     => 'checkbox'
+                    'type' => 'checkbox'
                 )
             );
 
             // Give Danny his Credit?
-            $wp_customize->add_setting( 'devdmbootstrap4_show_credit_setting',
+            $wp_customize->add_setting('devdmbootstrap4_show_credit_setting',
                 array(
                     'default' => 1,
                     'type' => 'theme_mod',
                     'capability' => 'edit_theme_options',
                     'transport' => 'refresh',
-                    'sanitize_callback' => array( 'devdmbootstrap_Customize' , 'devdmbootstrap_sanitize_checkbox' )
+                    'sanitize_callback' => array('devdmbootstrap_Customize', 'devdmbootstrap_sanitize_checkbox')
                 )
             );
 
-            $wp_customize->add_control( 'devdmbootstrap4_show_credit',
+            $wp_customize->add_control('devdmbootstrap4_show_credit',
                 array(
-                    'label'    => __( 'Show Danny some love in the footer?', 'devdmbootstrap4' ),
-                    'section'  => 'devdmbootstrap_options',
+                    'label' => __('Show Danny some love in the footer?', 'devdmbootstrap4'),
+                    'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_show_credit_setting',
-                    'type'     => 'checkbox'
+                    'type' => 'checkbox'
                 )
             );
 
-            $wp_customize->get_setting( 'blogname' )->transport = 'refresh';
-            $wp_customize->get_setting( 'blogdescription' )->transport = 'refresh';
+            $wp_customize->get_setting('blogname')->transport = 'refresh';
+            $wp_customize->get_setting('blogdescription')->transport = 'refresh';
 
         }
 
-        public static function devdmbootstrap_sanitize_checkbox($value) {
+        public static function devdmbootstrap_sanitize_checkbox($value)
+        {
             return ($value == 1 ? $value : '');
         }
 
-        public static function devdmbootstrap_sanitize_select( $input, $setting ) {
+        public static function devdmbootstrap_sanitize_select($input, $setting)
+        {
             $input = sanitize_key($input);
             $control = $setting->manager->get_control($setting->id);
             $choices = $control->choices;
 
-            return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+            return (array_key_exists($input, $choices) ? $input : $setting->default);
         }
 
     }
+}
 
-    /**
-     * devdmbootstrap_customizer_js
-     * Hook in our Live Preview jQuery file for customizer controls
-     */
-    add_action( 'customize_preview_init', 'devdmbootstrap_customizer_js' );
+/**
+ * devdmbootstrap_customizer_js
+ * Hook in our Live Preview jQuery file for customizer controls
+ */
+add_action( 'customize_preview_init', 'devdmbootstrap_customizer_js' );
+
+if (!function_exists( 'devdmbootstrap_customizer_js' ) ) {
     function devdmbootstrap_customizer_js() {
         wp_enqueue_script(
             'devdmbootstrap_customizer_js',
@@ -189,12 +196,9 @@ if (!class_exists('devdmbootstrap_Customize')) {
             true
         );
     }
-
-    /**
-     * devdmbootstrap_customizer_js
-     * Hook in our Live Preview jQuery file for customizer controls
-     */
-
 }
+
+
+
 
 

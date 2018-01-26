@@ -1,8 +1,10 @@
 <div class="dmbs-post-meta-footer">
 
-    <div class="dmbs-post-meta-categories">
-        <?php _e('Posted in ','devdmbootstrap4'); the_category(', '); ?>
-    </div>
+    <?php if( has_category() ) : ?>
+        <div class="dmbs-post-meta-categories">
+            <?php _e('Posted in ','devdmbootstrap4'); the_category(', '); ?>
+        </div>
+    <?php endif; ?>
 
     <?php if( has_tag() ) : ?>
         <div class="dmbs-post-meta-tags">
