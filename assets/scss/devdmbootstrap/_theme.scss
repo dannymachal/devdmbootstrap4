@@ -112,7 +112,11 @@
         text-align: right;
 
       }
-      .dmbs-post-featured-image { }
+      .dmbs-post-featured-image {
+        img {
+          border-radius: 0;
+        }
+      }
       .dmbs-post-content {
 
         overflow-wrap: break-word;
