@@ -25,7 +25,6 @@
                             ?>
 
                             <?php paginate_comments_links(); ?>
-                            <?php // wp_enqueue_script( "comment-reply" ); ?>
                         </ul>
 
                     <?php endif; ?>

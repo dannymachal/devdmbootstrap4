@@ -11,7 +11,7 @@
     <div class="col-sm-6 dmbs-author-page-meta">
 
         <?php if ($displayname = get_the_author_meta('display_name',$curauth->ID)) : ?>
-            <h1 class="dmbs-author-display-name"><?php echo $displayname; ?></h1>
+            <h1 class="dmbs-author-display-name"><?php echo esc_html($displayname); ?></h1>
         <?php endif; ?>
 
         <?php if ($authorurl = get_the_author_meta('user_url',$curauth->ID)) : ?>
@@ -19,19 +19,15 @@
         <?php endif; ?>
 
         <?php if ($authorDescription = get_the_author_meta('description',$curauth->ID)) : ?>
-            <p class="dmbs-author-description"><?php echo $authorDescription; ?></p>
+            <p class="dmbs-author-description"><?php echo esc_html($authorDescription); ?></p>
         <?php endif; ?>
 
         <?php if ($authoryim = get_the_author_meta('yim',$curauth->ID)) : ?>
-            <p class="dmbs-author-yim"><?php echo $authoryim; ?></p>
-        <?php endif; ?>
-
-        <?php if ($authoraim = get_the_author_meta('aim',$curauth->ID)) : ?>
-            <p class="dmbs-author-aim"><?php echo $authoraim; ?></p>
+            <p class="dmbs-author-yim"><?php echo esc_html($authoryim); ?></p>
         <?php endif; ?>
 
         <?php if ($authorjabber = get_the_author_meta('jabber',$curauth->ID)) : ?>
-            <p class="dmbs-author-jabber"><?php echo $authorjabberl; ?></p>
+            <p class="dmbs-author-jabber"><?php echo esc_html($authorjabber); ?></p>
         <?php endif; ?>
 
     </div>

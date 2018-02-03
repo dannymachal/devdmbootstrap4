@@ -51,8 +51,9 @@ function devdmbootstrap4_comment_form( $args ) {
         </div>
         ';
     $args['class_submit'] = 'btn btn-success btn-sm'; // since WP 4.1
-    $args['logged_in_as'] = '<p class="logged-in-as">' .
-    sprintf(
+    $args['logged_in_as'] = '<p class="logged-in-as">';
+    $args['logged_in_as'] .= sprintf(
+        /* translators: %s: Admin URL to profile, Display Name, Logout */
         __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" class="btn btn-sm btn-danger" title="Log out of this account"><span class="fa fa-sign-out"></span> Log out?</a>','devdmbootstrap4' ),
         admin_url( 'profile.php' ),
         $current_user->display_name,
@@ -79,9 +80,10 @@ function devdmbootstrap4_header_background() {
     $headerImage = get_header_image();
     $showHeader  = get_theme_mod('devdmbootstrap4_show_header_setting', 1);
     if ($showHeader && !empty($headerImage)) {
-        echo "<style>" . PHP_EOL;
-        echo ".dmbs-header { background-image: url(". $headerImage ."); }" . PHP_EOL;
-        echo "</style>". PHP_EOL;
+        echo esc_html("<style>" . PHP_EOL);
+        /* translators: %s: header background image URL */
+        echo esc_attr(sprint_f(".dmbs-header { background-image: url(%s); }", $headerImage) . PHP_EOL);
+        echo esc_html("</style>" . PHP_EOL);
     }
 }
 add_action('wp_head','devdmbootstrap4_header_background');

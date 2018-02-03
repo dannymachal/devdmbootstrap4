@@ -3,7 +3,7 @@
     if ($rightSidebarSize != 0) :
 ?>
 
-    <div class="col-md-<?php echo $rightSidebarSize; ?> dmbs-right">
+    <div class="col-md-<?php echo esc_attr($rightSidebarSize); ?> dmbs-right">
         <?php dynamic_sidebar( 'dmbs-right-sidebar' ); ?>
     </div>
 

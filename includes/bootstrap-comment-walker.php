@@ -5,14 +5,14 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 	protected function html5_comment( $comment, $depth, $args ) {
 		$tag = ( $args['style'] === 'div' ) ? 'div' : 'li';
 ?>
-		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children === 1 ? 'has-children media' : ' media' ); ?>>
+		<<?php echo esc_html($tag); ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children === 1 ? 'has-children media' : ' media' ); ?>>
 
 
 			<div class="card w-100" id="div-comment-<?php comment_ID(); ?>">
 				<div class="card-header">
 					<div class="dmbs-comment-author">
 						<?php if ( $args['avatar_size'] != 0  ): ?>
-						<a href="<?php echo get_comment_author_url(); ?>" class="media-object">
+						<a href="<?php echo esc_url(get_comment_author_url()); ?>" class="media-object">
 							<?php echo get_avatar( $comment, $args['avatar_size'],'mm','', array('class'=>"comment_avatar rounded-circle") ); ?>
 						</a>
 						<?php endif; ?>
@@ -29,7 +29,7 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 				</div>
 				<div class="card-block warning-color">
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="card-text comment-awaiting-moderation label label-info text-muted small"><?php _e( 'Your comment is awaiting moderation.' ,'devdmbootstrap4' ); ?></p>
+					<p class="card-text comment-awaiting-moderation label label-info text-muted small"><?php esc_html_e( 'Your comment is awaiting moderation.' ,'devdmbootstrap4' ); ?></p>
 					<?php endif; ?>
 
 					<div class="comment-content card-text">

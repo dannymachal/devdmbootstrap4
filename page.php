@@ -9,7 +9,8 @@
 
             <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>
 
-            <div class="col-md-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
+            <?php $dmbsColumnSize = devdmbootstrap_column_size('main'); ?>
+            <div class="col-md-<?php echo sanitize_html_class( $dmbsColumnSize, '8' ); ?> dmbs-main">
 
                 <?php if ( have_posts() ) : ?>
 
@@ -25,12 +26,7 @@
 
                             <div class="dmbs-page-content">
 
-                                <?php
-                                the_content( sprintf(
-                                    wp_kses( esc_html__( 'Continue reading %s', 'devdmbootstrap4' ), array( 'span' => array( 'class' => array() ) ) ),
-                                    the_title( '<span class="screen-reader-text">"', '"</span>', false )
-                                ) );
-                                ?>
+                                <?php the_content(); ?>
 
                             </div>
 

@@ -10,7 +10,7 @@
             <?php if (!empty($dmbsCustomLogoUrl)) : ?>
                 <div class="col-sm-<?php echo ($dmbsHeaderText == 0 ? '12' : '4'); ?> my-auto dmbs-header-left">
                     <a class="dmbs-logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img class="dmbs-logo-image" src="<?php echo $dmbsCustomLogoUrl; ?>" alt="<?php bloginfo('name'); ?>" />
+                        <img class="dmbs-logo-image" src="<?php echo esc_url($dmbsCustomLogoUrl); ?>" alt="<?php bloginfo('name'); ?>" />
                     </a>
                 </div>
             <?php endif; ?>

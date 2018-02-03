@@ -9,7 +9,8 @@
 
             <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>
 
-            <div class="col-md-<?php echo devdmbootstrap_column_size('main'); ?> dmbs-main">
+            <?php $dmbsColumnSize = devdmbootstrap_column_size('main'); ?>
+            <div class="col-md-<?php echo sanitize_html_class( $dmbsColumnSize, '8' ); ?> dmbs-main">
 
                 <?php if ( have_posts() ) : ?>
 
@@ -26,7 +27,7 @@
 
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <div class="dmbs-post-featured-image">
-                                    <?php the_post_thumbnail('featured', ['class' => 'card-img-top']); ?>
+                                    <?php the_post_thumbnail('featured', array('class' => 'card-img-top')); ?>
                                 </div>
                             <?php endif; ?>
 
@@ -39,10 +40,10 @@
                                 <?php endif; ?>
 
                                 <?php
-                                the_content( sprintf(
-                                    wp_kses( esc_html__( 'Continue reading %s', 'devdmbootstrap4' ), array( 'span' => array( 'class' => array() ) ) ),
-                                    the_title( '<span class="screen-reader-text">"', '"</span>', false )
-                                ) );
+                                    /* translators: %s: Name of current post */
+                                    the_content( sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'devdmbootstrap4' ),
+                                        get_the_title()
+                                    ) );
                                 ?>
 
                             </div>

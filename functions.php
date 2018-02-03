@@ -175,7 +175,7 @@ add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
 /**
  * Customizer
  */
-require_once( __DIR__ . '/includes/customizer.php');
+require_once('includes/customizer.php');
 
 /**
  * Calculate Column Sizes and return the value when called
@@ -232,9 +232,9 @@ add_action('wp_enqueue_scripts','devdmbootstrap_nav_walker');
 /**
  * Custom Comment Walker
  */
-require_once( __DIR__ . '/includes/bootstrap-comment-walker.php');
+require_once('includes/bootstrap-comment-walker.php');
 
 /**
  * Utilities
  */
-require_once( __DIR__ . '/includes/utilities.php');
+require_once('includes/utilities.php');
