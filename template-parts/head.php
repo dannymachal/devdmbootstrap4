@@ -18,7 +18,12 @@
             <?php if ($dmbsHeaderText == 1) : ?>
                 <div class="col-sm-<?php echo (!empty($dmbsCustomLogoUrl) ? "8" : "12"); ?> my-auto dmbs-header-right">
 
-                    <h1 class="dmbs-header-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                    <?php if (is_front_page() || is_home()) : ?>
+                        <h1 class="dmbs-header-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                    <?php else: ?>
+                        <h2 class="dmbs-header-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
+                    <?php endif; ?>
+
                     <h4 class="dmbs-header-description"><?php bloginfo( 'description' ); ?></h4>
 
                 </div>

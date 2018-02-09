@@ -21,24 +21,28 @@
 
   .dmbs-header-right {
 
-    .dmbs-header-title {
+    h1, h2 {
+      &.dmbs-header-title {
 
-      padding-top: 0;
+        padding-top: 0;
+        font-size: 2.5em;
 
-      @media (max-width: map-get($grid-breakpoints, 'lg')) {
-        padding-top: 8px;
+        @media (max-width: map-get($grid-breakpoints, 'lg')) {
+          padding-top: 8px;
+        }
+
+        @media (max-width: map-get($grid-breakpoints, 'md')) {
+          font-size: 30px;
+        }
+
+        @media (max-width: map-get($grid-breakpoints, 'sm')) {
+          font-size: 20px;
+          text-align: center;
+        }
+
       }
-
-      @media (max-width: map-get($grid-breakpoints, 'md')) {
-        font-size: 30px;
-      }
-
-      @media (max-width: map-get($grid-breakpoints, 'sm')) {
-        font-size: 20px;
-        text-align: center;
-      }
-
     }
+
     .dmbs-header-description {
 
       @media (max-width: map-get($grid-breakpoints, 'lg')) {
@@ -103,7 +107,7 @@
 
       }
       .dmbs-post-meta-header {
-        margin-top: 2vw;
+        margin-top: 1vw;
       }
       .dmbs-post-date { }
       .dmbs-post-author { }

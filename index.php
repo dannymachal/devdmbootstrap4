@@ -23,7 +23,7 @@
                     <article id="post-<?php the_ID(); ?>" <?php post_class('dmbs-post card'); ?>>
 
                         <header class="card-header dmbs-post-header">
-                            <?php the_title( sprintf( '<h1 class="dmbs-post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+                            <?php the_title( sprintf( '<h2 class="dmbs-post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
                             <?php get_template_part('template-parts/postmeta','header'); ?>
                         </header>
 
