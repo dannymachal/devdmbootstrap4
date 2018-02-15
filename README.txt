@@ -4,11 +4,11 @@ This is a starter WordPress theme for DEVELOPERS using Twitter Bootstrap 4.x
 
 Keep it simple. The theme is file based with no complex classes or hooks. I've simply developed an easy to understand theme that integrates Bootstrap 4. Complexity you can build into a child-theme while still keeping Bootstrap 4 and its components available to you. A skilled developer can create ANY kind of child-theme, for any type of website using DevDmBootstrap4 as the parent theme.
 
-### [Documentation / Demo] (https://devdmbootstrap.com)
+### [Documentation / Demo](https://devdmbootstrap.com)
 
-[https://devdmbootstrap.com] (https://devdmbootstrap.com)
+[https://devdmbootstrap.com](https://devdmbootstrap.com) - In progress.
 
-[Community Forum] (https://devdmbootstrap.com/community/) for questions.
+[Knowledge Base](https://devdmbootstrap.com/knowledge-base/) - Always Updating.
 
 ### Copyrights and License Information for theme resources
 

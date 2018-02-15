@@ -11,7 +11,7 @@ Keep it simple. The theme is file based with no complex classes or hooks. I've s
 
 [https://devdmbootstrap.com](https://devdmbootstrap.com) - In progress.
 
-[Community Forum](https://devdmbootstrap.com/community/) for questions - coming soon.
+[Knowledge Base](https://devdmbootstrap.com/knowledge-base/) - Always Updating.
 
 ### Copyrights and License Information for theme resources
 
