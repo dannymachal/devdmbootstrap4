@@ -38,6 +38,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'label' => __('Show the Header?', 'devdmbootstrap4'),
                     'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_show_header_setting',
+                    'description' => __( 'Toggle showing the header content area containing the logo, title and tagline.', 'devdmbootstrap4' ),
                     'type' => 'checkbox'
                 )
             );
@@ -58,6 +59,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'label' => __('Right Sidebar Size', 'devdmbootstrap4'),
                     'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_rightsidebar',
+                    'description' => __( 'The col-md-* size of the right sidebar.', 'devdmbootstrap4' ),
                     'type' => 'select',
                     'choices' => array(
                         '0' => '0 - ' . __('Hidden', 'devdmbootstrap4'),
@@ -86,6 +88,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'label' => __('Left Sidebar Size', 'devdmbootstrap4'),
                     'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_leftsidebar',
+                    'description' => __( 'The col-md-* size of the left sidebar.', 'devdmbootstrap4' ),
                     'type' => 'select',
                     'choices' => array(
                         '0' => '0 - ' . __('Hidden', 'devdmbootstrap4'),
@@ -111,9 +114,10 @@ if (!class_exists('devdmbootstrap_Customize')) {
 
             $wp_customize->add_control('devdmbootstrap4_fontawesome',
                 array(
-                    'label' => __('Load Font Awesome Free Icon Library (v5.0.2)?', 'devdmbootstrap4'),
+                    'label' => __('Load the Font Awesome Free Icon Library?', 'devdmbootstrap4'),
                     'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_fontawesome_setting',
+                    'description' => __( 'Enqueue Font Awesome Icon Set (v5.0.2).', 'devdmbootstrap4' ),
                     'type' => 'checkbox'
                 )
             );
@@ -134,6 +138,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'label' => __('Use the Enhanced menu system?', 'devdmbootstrap4'),
                     'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_enhanced_menu_setting',
+                    'description' => __( 'Enable hover for desktop browsers and icon classes for menu items using the menu item meta description field. See the theme website documentation for full details.', 'devdmbootstrap4' ),
                     'type' => 'checkbox'
                 )
             );
@@ -154,6 +159,7 @@ if (!class_exists('devdmbootstrap_Customize')) {
                     'label' => __('Show Danny some love in the footer?', 'devdmbootstrap4'),
                     'section' => 'devdmbootstrap_options',
                     'settings' => 'devdmbootstrap4_show_credit_setting',
+                    'description' => __( 'Show Created By in the Footer.', 'devdmbootstrap4' ),
                     'type' => 'checkbox'
                 )
             );
