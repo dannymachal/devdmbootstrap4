@@ -17,3 +17,25 @@ Keep it simple. The theme is file based with no complex classes or hooks. I've s
 * iii) DevDmBootstrap4 includes popper.min.js Copyright (C) Federico Zivolo 2017 Distributed under the MIT License.
 
 Everything else used in DevDmBootstrap4 (including the screenshot.png) has been created by me (Danny Machal), especially for the DevDmBootstrap4 theme and is distributed under GPL v3 license.
+
+### Changelog
+
+= 1.5 =
+* Released: March 29, 2018
+* https://devdmbootstrap.com/devdmbootstrap4-v1-5/
+
+= 1.4 =
+* Released: March 27, 2018
+* https://devdmbootstrap.com/devdmbootstrap4-v1-4/
+
+= 1.3 =
+* Released: February 16, 2018
+* https://devdmbootstrap.com/devdmbootstrap4-v1-3/
+
+= 1.2 =
+* Released: January 30, 2018
+* https://devdmbootstrap.com/devdmbootstrap4-v1-2/
+
+= 1.1 =
+* Released: January 21, 2018
+* https://devdmbootstrap.com/devdmbootstrap4-v1-1/
