@@ -232,7 +232,7 @@ add_action('wp_enqueue_scripts','devdmbootstrap_nav_walker');
 /**
  * Custom Comment Walker
  */
-require_once('includes/bootstrap-comment-walker.php');
+require_once('includes/devdmbootstrap_comment_walker.php');
 
 /**
  * Utilities

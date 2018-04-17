@@ -1,6 +1,6 @@
 <?php
 
-class Bootstrap_Comment_Walker extends Walker_Comment {
+class devdmbootstrap_comment_walker extends Walker_Comment {
 
 	protected function html5_comment( $comment, $depth, $args ) {
 		$tag = ( $args['style'] === 'div' ) ? 'div' : 'li';

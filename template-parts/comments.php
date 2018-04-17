@@ -20,7 +20,7 @@
                                     'style'         => 'ul',
                                     'short_ping'    => true,
                                     'avatar_size'   => '64',
-                                    'walker'        => new Bootstrap_Comment_Walker(),
+                                    'walker'        => new devdmbootstrap_comment_walker(),
                                 ) );
                             ?>
 
