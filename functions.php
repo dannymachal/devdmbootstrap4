@@ -153,7 +153,7 @@ if (!function_exists( 'devdmbootstrap_scripts' ) ) {
         $wpTheme = wp_get_theme();
 
         // Enqueue the default Bootstrap 4.x CSS with the name devdmbootstrap4-css
-        wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4.css');
+        wp_enqueue_style('devdmbootstrap4-css', get_template_directory_uri() . '/assets/css/devdmbootstrap/devdmbootstrap4.min.css');
 
         // Enqueue the default style.css with the name devdmbootstrap4-stylesheet
         wp_enqueue_style('devdmbootstrap4-stylesheet', get_stylesheet_uri());
