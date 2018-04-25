@@ -30,9 +30,6 @@ if (!function_exists( 'devdmbootstrap_setup' ) ) {
         // Add Theme Support for Customize Selective Refresh Widgets
         add_theme_support( 'customize-selective-refresh-widgets' );
 
-        // Add Editor stylesheet.
-        add_editor_style(get_template_directory_uri() . '/assets/css/devdmbootstrap/editor-style.css');
-
         // Add Theme Support for Custom Header (background) image
         add_theme_support( 'custom-header', array(
             'default-image'          => '',
@@ -168,6 +165,11 @@ if (!function_exists( 'devdmbootstrap_scripts' ) ) {
 
         // Enqueue the default Bootstrap 4.x JS with the name devdmbootstrap4-js.
         wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4x/bootstrap.js', array('jquery'), $wpTheme->get( 'Version' ), true);
+
+        // Enqueue comment-reply
+        if ( is_singular() && comments_open() && get_option('thread_comments') ) {
+            wp_enqueue_script( 'comment-reply' );
+        }
     }
 }
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
@@ -175,7 +177,7 @@ add_action( 'wp_enqueue_scripts', 'devdmbootstrap_scripts' );
 /**
  * Customizer
  */
-require_once('includes/customizer.php');
+require_once( get_template_directory() . '/includes/customizer.php');
 
 /**
  * Calculate Column Sizes and return the value when called
@@ -232,9 +234,9 @@ add_action('wp_enqueue_scripts','devdmbootstrap_nav_walker');
 /**
  * Custom Comment Walker
  */
-require_once('includes/devdmbootstrap_comment_walker.php');
+require get_template_directory() . '/includes/devdmbootstrap_comment_walker.php';
 
 /**
  * Utilities
  */
-require_once('includes/utilities.php');
+require get_template_directory() . '/includes/utilities.php';

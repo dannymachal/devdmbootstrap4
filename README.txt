@@ -20,6 +20,10 @@ Everything else used in DevDmBootstrap4 (including the screenshot.png) has been 
 
 ### Changelog
 
+= 1.7 =
+* Released: April 25, 2018
+* https://devdmbootstrap.com/devdmbootstrap4-v1-7/
+
 = 1.5 =
 * Released: March 29, 2018
 * https://devdmbootstrap.com/devdmbootstrap4-v1-5/

@@ -152,6 +152,14 @@
 
       .comment {
         margin: $commentGutters 0;
+        display: flex;
+        flex-direction: column;
+
+        #respond {
+          @extend .card, .w-100;
+          margin-top: 1vw;
+          padding: 1vw;
+        }
 
         .dmbs-comment-author {
           display: flex;
