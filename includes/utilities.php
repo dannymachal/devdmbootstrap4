@@ -80,10 +80,11 @@ function devdmbootstrap4_header_background() {
     $headerImage = get_header_image();
     $showHeader  = get_theme_mod('devdmbootstrap4_show_header_setting', 1);
     if ($showHeader && !empty($headerImage)) {
-        echo esc_html("<style>" . PHP_EOL);
-        /* translators: %s: header background image URL */
-        echo esc_attr(sprint_f(".dmbs-header { background-image: url(%s); }", $headerImage) . PHP_EOL);
-        echo esc_html("</style>" . PHP_EOL);
+        ?>
+        <style type="text/css">
+            <?php echo esc_attr(sprintf(".dmbs-header {background-image: url(%s);}", $headerImage)); ?>
+        </style>
+        <?php
     }
 }
 add_action('wp_head','devdmbootstrap4_header_background');
