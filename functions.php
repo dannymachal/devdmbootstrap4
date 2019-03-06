@@ -157,7 +157,7 @@ if (!function_exists( 'devdmbootstrap_scripts' ) ) {
 
         // Enqueue Font Awesome Icon Set with the name devdmbootstrap4-fontawesome.
         if (get_theme_mod('devdmbootstrap4_fontawesome_setting', 1)) {
-            wp_enqueue_style('devdmbootstrap4-fontawesome', get_template_directory_uri() . '/assets/fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome-all.min.css');
+            wp_enqueue_style('devdmbootstrap4-fontawesome', get_template_directory_uri() . '/assets/fontawesome-free-5.7.2-web/css/all.min.css');
         }
 
         // Enqueue popper.min.js with the name devdmbootstrap4-popper-js
